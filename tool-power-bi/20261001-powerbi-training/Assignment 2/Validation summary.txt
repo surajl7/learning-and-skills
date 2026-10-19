@@ -1,0 +1,38 @@
+Validation summary (outside Power BI)
+
+Count Records:
+-- ==============================================================================================
+PowerBI_Raw_Sales_Jan: before transformations -- 22
+PowerBI_Raw_Sales_Jan: after transformations -- 22
+
+PowerBI_Raw_Sales_Feb: before transformations -- 6
+PowerBI_Raw_Sales_Feb: before transformations -- 6
+
+
+After Append:
+-- ==============================================================================================
+
+Sales_All_Months = expected (Jan + Feb) -- 22 + 6 = 28
+Sales_All_Months = actual after append -- 28
+
+
+After merge: 
+-- ==============================================================================================
+
+row count same as Sales_All_Months before merge -- 28
+
+row count same as Sales_All_Months After merge -- 28
+
+
+Data quality checks:
+-- ==============================================================================================
+No errors in OrderDate columns in any query.
+
+All specified text fields are Proper Case.
+
+
+Issues and resolutions:
+-- ==============================================================================================
+
+1. Date type columns can not be trimmed 
+Resolutions - removed trim application on OrderDate column

@@ -1,0 +1,56 @@
+Prompt:
+
+I have a CSV file named Scenario2_Large_Retail_Performance.csv that I want to model in Power BI as a star schema.
+
+Load the file into Power BI as a table named Scenario2_Large_Retail_Performance.
+
+From this table, create the following dimension tables in Power Query (all derived from the fact table, not created externally):
+
+DimCustomer: CustomerID, CustomerName, CustomerSegment, CustomerCity, CustomerRegion
+DimProduct: ProductID, ProductName, Category, Subcategory, Brand, UnitCost
+DimStore: StoreID, StoreName, StoreCity, StoreRegion, StoreSize
+DimSalesperson: SalespersonID, SalespersonName, SalesTeam
+DimDate: Date, Year, Quarter, MonthNo, MonthName, YearMonth, WeekNo, DayName, IsWeekend
+DimPaymentMethod (optional): PaymentMethod (Card, Bank Transfer, Credit, UPI)
+DimChannel (optional): OrderChannel (Store, Partner, Online)
+DimOrderStatus (optional): OrderStatus, IsRevenueRecognized (where Completed = true)
+DimGeography (advanced): City, Region
+
+In Power Query (Edit Queries), remove duplicate rows in each of the dimension tables to ensure unique dimension values.
+
+Build the DimDate table as a proper date dimension using the range of dates available in the CSV (e.g., from OrderDate/ShipDate) and populate the columns:
+
+Date
+Year
+Quarter
+MonthNo
+MonthName
+YearMonth
+WeekNo
+DayName
+IsWeekend
+
+On the main Scenario2_Large_Retail_Performance fact table, using M in Power Query, add these calculated columns:
+
+DeliveryDays (number):
+Duration.Days([ShipDate] - [OrderDate])
+
+DeliverySpeed (text):
+if [DeliveryDays] <= 3 then "Fast"
+else if [DeliveryDays] <= 6 then "Standard"
+else "Slow"
+
+DiscountBand (text) from DiscountPct:
+if [DiscountPct] = 0 then "No Discount"
+else if [DiscountPct] <= 0.1 then "Low"
+else "High"
+
+ProfitMarginPct (number):
+if [NetSales] = null or [NetSales] = 0 then null
+else [Profit] / [NetSales]
+
+IsNetSalesValid (logical):
+[GrossSales] - [DiscountAmount] = [NetSales]
+
+
+Provide the detailed M steps (Table.Duplicate, Table.SelectColumns, Table.Distinct, and Table.AddColumn) needed to implement this end-to-end in Power Query.

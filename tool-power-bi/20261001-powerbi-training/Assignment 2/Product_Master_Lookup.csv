@@ -1,0 +1,18 @@
+﻿ProductCode,StandardProductName,StandardCategory,Supplier,CostPrice
+ELEC-1001-IN,Wireless Mouse,Electronics,NovaTech,520
+ELEC-1002-IN,USB-C Hub,Electronics,NovaTech,980
+ELEC-1003-IN,Noise-Cancelling Headphones,Electronics,SoundSphere,4100
+ELEC-1004-IN,24-inch Monitor,Electronics,ViewPro,9200
+ELEC-1005-IN,Mechanical Keyboard,Electronics,KeyWorks,2400
+HOME-2001-IN,Stainless-Steel Bottle,Home & Kitchen,HomeCraft,310
+HOME-2002-IN,Cotton Bedsheet,Home & Kitchen,HomeCraft,850
+HOME-2003-IN,LED Table Lamp,Home & Kitchen,BrightLife,590
+HOME-2004-IN,Air Fryer,Home & Kitchen,KitchenPlus,5100
+OFFC-3001-IN,A5 Notebook Pack,Office Supplies,PaperPoint,160
+OFFC-3002-IN,Gel Pen Set,Office Supplies,PaperPoint,90
+OFFC-3003-IN,Desk Organizer,Office Supplies,DeskMate,420
+OFFC-3004-IN,Printer Paper Box,Office Supplies,PaperPoint,1380
+FURN-4001-IN,Ergonomic Chair,Furniture,ComfortLine,6200
+FURN-4002-IN,Standing Desk,Furniture,ComfortLine,11900
+FURN-4003-IN,Bookshelf,Furniture,WoodWorks,5600
+ELEC-9999-IN,Webcam,Electronics,NovaTech,1300

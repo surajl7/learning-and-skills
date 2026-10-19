@@ -1,0 +1,23 @@
+﻿OrderID,OrderDate,CustomerFullName,Email,Phone,ProductCode,ProductDescription,Category,Region,City,State,Status,Quantity,UnitPrice,SalesRep,Comments
+ORD-1001,2026-01-03,  Aarav Sharma  ,AARAV.SHARMA@EXAMPLE.COM ,98765-43210,ELEC-1001-IN, Wireless Mouse ,Electronics,North,Noida,UP,Completed,2,799,Neha Verma,First order
+ORD-1002,03/01/2026,Meera Iyer,meera.iyer@example.com,98765 43211,HOME-2001-IN,Stainless Steel Bottle,Home & Kitchen,,Chennai,Tamil Nadu,complete,1,499,Rohan Das,Priority customer
+ORD-1003,2026/01/04,Kabir Singh, kabir.singh@example.com,+91 9876543212,ELEC-1002-IN,USB-C Hub,Electronics,,Delhi,Delhi,COMPLETED,3,1499,Neha Verma,	Corporate account
+ORD-1004,05-Jan-2026,Ananya Gupta,ananya.gupta@example.com,9876543213,OFFC-3001-IN,A5 Notebook Pack,Office Supplies,West,Mumbai,Maharashtra,Pending,5,299,Priya Nair,
+ORD-1005,2026-01-06,Vihaan Patel,vihaan.patel@example.com ,98765-43214,FURN-4001-IN,Ergonomic Chair,Furniture,,Ahmedabad,Gujarat,pending,1,8499,Rohan Das,Needs assembly
+ORD-1006,06/01/2026,Isha Reddy,isha.reddy@example.com,9876543215,ELEC-1003-IN,Noise Cancelling Headphones,Electronics,South,Hyderabad,Telangana,Cancelled,1,5999,Priya Nair,Customer changed mind
+ORD-1007,2026-01-07,Arjun Rao,arjun.rao@example.com,9876543216,HOME-2002-IN,Cotton Bedsheet,Home and Kitchen,,Bengaluru,Karnataka,Returned,2,1299,Neha Verma,Damaged package
+ORD-1008,2026-01-08,  Sara Khan,sara.khan@example.com,9876543217,OFFC-3002-IN,Gel Pen Set,Office Supplies,,Lucknow,UP,Completed,4,199,Priya Nair,Contains nonprintablecharacter
+ORD-1009,08/01/2026,Dev Malhotra,DEV.MALHOTRA@example.com,98765 43218,ELEC-1004-IN,24-inch Monitor,Electronic,North,Gurugram,Haryana,Complete,2,12499,Rohan Das,
+ORD-1010,2026-01-09,Nisha Joshi,nisha.joshi@example.com,9876543219,FURN-4002-IN,Standing Desk,Furniture,,Pune,Maharashtra,In Progress,1,15999,Neha Verma,Delivery after 6 PM
+ORD-1011,10-Jan-2026,Riya Sen,riya.sen@example.com,9876543220,HOME-2003-IN,LED Table Lamp,Home & Kitchen,East,Kolkata,West Bengal,completed,2,899,Priya Nair, Gift wrap 
+ORD-1012,2026/01/10,Aditya Bose,aditya.bose@example.com,9876543221,OFFC-3003-IN,Desk Organizer,Office supplies,,Kolkata,West Bengal,Pending,3,649,Rohan Das,
+ORD-1013,2026-01-11,Pooja Menon,pooja.menon@example.com,9876543222,ELEC-1001-IN,Wireless Mouse,Electronics,South,Kochi,Kerala,Completed,1,799,Neha Verma,Repeat product
+ORD-1014,11/01/2026,Rahul Jain,rahul.jain@example.com,9876543223,HOME-2001-IN,Stainless Steel Bottle,Home & Kitchen,,Jaipur,Rajasthan,CANCELLED,6,499,Priya Nair,Bulk order
+ORD-1015,2026-01-12,Sneha Kulkarni,sneha.kulkarni@example.com,9876543224,ELEC-1002-IN,USB-C Hub,Electronics,West,Pune,Maharashtra,completed,2,1499,Rohan Das,
+ORD-1016,13-Jan-2026,Farhan Ali,farhan.ali@example.com,9876543225,FURN-4001-IN,Ergonomic Chair,Furniture,,Noida,UP,Pending,,8499,Neha Verma,Quantity missing
+ORD-1017,2026-01-13,Kavya Nair, kavya.nair@example.com ,9876543226,OFFC-3001-IN,A5 Notebook Pack,Office Supplies,South,Thiruvananthapuram,Kerala,Completed,10,299,Priya Nair,
+ORD-1018,14/01/2026,Manav Shah,manav.shah@example.com,9876543227,ELEC-1003-IN,Noise Cancelling Headphones,Electronics,,Surat,Gujarat,Returned,1,5999,Rohan Das,Opened box
+ORD-1019,2026-01-15,Diya Kapoor,diya.kapoor@example.com,9876543228,HOME-2002-IN,Cotton Bedsheet,HOME & KITCHEN,North,Chandigarh,Chandigarh,complete,2,1299,Neha Verma,
+ORD-1020,15-Jan-2026,Yash Thakur,yash.thakur@example.com,9876543229,OFFC-3002-IN,Gel Pen Set,Office Supplies,,Bhopal,Madhya Pradesh,Pending,8,199,Priya Nair,School order
+ORD-1005,2026-01-06,Vihaan Patel,vihaan.patel@example.com ,98765-43214,FURN-4001-IN,Ergonomic Chair,Furniture,,Ahmedabad,Gujarat,pending,1,8499,Rohan Das,Needs assembly
+ORD-1009,08/01/2026,Dev Malhotra,DEV.MALHOTRA@example.com,98765 43218,ELEC-1004-IN,24-inch Monitor ,Electronic,North,Gurugram,Haryana,Completed,2,12499,Rohan Das,Near duplicate status differs

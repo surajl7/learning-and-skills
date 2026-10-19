@@ -1,0 +1,7 @@
+﻿OrderID,OrderDate,CustomerFullName,Email,Phone,ProductCode,ProductDescription,Category,Region,City,State,Status,Quantity,UnitPrice,SalesRep,Comments
+ORD-1021,2026-02-01,Aditi Mishra,aditi.mishra@example.com,9876543230,ELEC-1005-IN,Mechanical Keyboard,Electronics,North,Noida,UP,Completed,1,3499,Neha Verma,
+ORD-1022,02/02/2026,Kunal Roy,kunal.roy@example.com,9876543231,HOME-2004-IN,Air Fryer,Home & Kitchen,,Kolkata,West Bengal,pending,1,6999,Priya Nair,New customer
+ORD-1023,2026-02-03,Tara Sood,tara.sood@example.com ,9876543232,OFFC-3004-IN,Printer Paper Box,Office Supplies,,Delhi,Delhi,Complete,2,1899,Rohan Das,Corporate
+ORD-1024,04-Feb-2026,Rohit Bhat, rohit.bhat@example.com,9876543233,FURN-4003-IN,Bookshelf,Furniture,South,Bengaluru,Karnataka,Completed,1,7499,Neha Verma,
+ORD-1025,2026/02/05,Simran Kaur,simran.kaur@example.com,9876543234,ELEC-1001-IN,Wireless Mouse,Electronic,,Chandigarh,Chandigarh,Returned,2,799,Priya Nair,Wrong model
+ORD-1026,2026-02-06,Mohit Arora,mohit.arora@example.com,9876543235,HOME-2001-IN,Stainless Steel Bottle,Home and Kitchen,North,Delhi,Delhi,completed,4,499,Rohan Das,
