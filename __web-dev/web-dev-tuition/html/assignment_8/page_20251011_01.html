@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_8</title>
+</head>
+<body>
+    <center>
+        <h1>Assignment 8 | Page 1 | Date: 2025-10-11</h1>
+    <button style="height: 70px; width: 70px; "><a href="..\home\home_page.html">HOME</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\assignment_7\page_20251010_01.html">BACK</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\assignment_8\page_20251011_02.html">NEXT</a></button>
+    </center>
+    <hr>
+    <h4>HTML5 newly added input types element</h4>
+    
+    <p>
+        <mark>
+            1: Input Type - Color
+        </mark>
+    </p>
+    <form action="#">
+        <input type="color" name="upclick" value="#a52a2a"> UpClick
+        <input type="color" name="downclick" value="#f5f5dc"> DownClick
+    </form>
+    <hr>
+    <p>
+        <mark>
+            2: Input Type - Date
+        </mark>
+    </p>
+    <form action="#">
+        Select Start and End Date:
+        <br><br>
+        Start date: <input type="date" name="Startdate">
+        <br><br>
+        End date: <input type="date" name="Enddate">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            3: Input Type - datetime-local
+        </mark>
+    </p>
+    <form action="#">
+        <label for="">
+            Select the meeting schedule: 
+            <br><br>
+            Select Date and Time: <input type="datetime-local" name="meetingschedule">
+            <br><br>
+        </label>
+        <input type="submit">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            4: Input Type - email
+        </mark>
+    </p>
+    <form action="#">
+        <label for="">
+            <b>Enter your address: </b>
+        </label>
+        <input type="email" name="email" required>
+        <input type="submit">
+        <p>
+            <strong>Note:</strong> 
+            <br>
+            User can also enter multiple email addresses seperating by comma or whitespaceas following:
+        </p>
+        <label for="">
+            <b>
+                Enter multiple Email-addresses:
+            </b>
+        </label>
+        <input type="email" name="email" multiple>
+        <input type="submit">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            5. Input type - month
+        </mark>
+    </p>
+    <form action="#">
+        <label for="">Enter your Birth Month-Year: </label>
+    </form>
+    <input type="month" name="birthMonth">
+    <input type="submit">
+    <hr>
+    <p>
+        <mark>
+            6. Input type - number
+        </mark>
+    </p>
+    <label for="">Enter your age: </label>
+    <input type="number" name="num" min="50" max="80">
+    <input type="submit">
+    <hr>
+    <p>
+        <mark>
+            7. Input type - url
+        </mark>
+    </p>
+    <label for="">
+        Enter your website URL: 
+    </label>
+    <input type="url" name="website" placeholder="https://example.com">
+    <br><br>
+    <input type="submit" value="Send Data">
+    <hr>
+    <p>
+        <mark>
+            8. Input type - week
+        </mark>
+    </p>
+    <label for="">
+        <b>
+            Select your best week of year: 
+        </b>
+    </label>
+    <br><br>
+    <input type="week" name="bestweek">
+    <input type="submit" value="Send Data">
+    <hr>
+    <p>
+        <mark>
+            9. Input type - Search
+        </mark>
+    </p>
+    <form action="#">
+        <label for="">
+            Serach here: 
+        </label>
+        <input type="search" name="q">
+        <input type="submit" value="serach">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            10. Input type - telphone
+        </mark>
+    </p>
+    <form action="#">
+        <label for="">
+            <b>
+                Enter your Telephone Number in format of xxx-xxx-xxxx
+            </b>
+        </label>
+        <br>
+        Your Number:
+        <input type="tel" name="telphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

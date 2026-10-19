@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+</head>
+<script>
+    function myFunction(){
+        var x = document.getElementsByClassName("fruit");
+        for (var i = 0; i < x.length ; i++){
+            x[i].style.display = "none"
+        }
+    }
+</script>
+<body>
+    <h2>Class Attribute with JavaScript</h2>
+    <p>Click the button, to hide all elements with the class name "fruit", with JavaScript</p>
+    <button onclick="myFunction()">Hide Elements</button>
+
+    <h2 class="fruit"> Mango </h2>
+    <p> Mango is king of all fruits. </p>
+    <h2 class="fruit"> Orange </h2>
+    <p> Oranges are full of Vitamin C. </p>
+    <h2 class="fruit"> Apple </h2>
+    <p> An apple a day, keeps the Doctor away. </p>
+</body>
+</html>

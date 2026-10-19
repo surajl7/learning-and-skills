@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full height fixed vertical Navbar</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 250px;
+            overflow: auto;
+            background-color: lightblue;
+            border: 1px solid blue;
+            position: fixed;
+        }
+        li a{
+            display: block;
+            color: blue;
+            font-size: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-bottom: 1px solid blue;
+        }
+        .active{
+            background-color: orange;
+            color: white;
+        }
+        li a:hover{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+    <div style="margin-left: 20%; padding-bottom: 2000px; color: blue;">
+        <h1>Welcome to Java</h1>
+        <h2>Side navigation bar with height: 100%; and position: fixed;</h2>
+        <h3>Scroll the page, and see how the sidenav sticks to the page</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Abstraction</title>
+</head>
+<body>
+    <script>
+        //Creating a constructor funtion
+        function Vehical(){
+            this.vehicalName = "vehicalName";
+            throw new Error("You cannnot create an instance of Abstract Class");
+        }
+        Vehical.prototype.display = function(){
+            return "Vehicle is: " + this.vehicalName;
+        }
+        //Creating a constructor funtion
+        function Bike(vehicalName){
+            this.vehicalName = vehicalName;
+        }
+        //Creating object without using the function constructor
+        Bike.prototype = Object.create(Vehical.prototype);
+        var bike = new Bike("Honda");
+        document.writeln(bike.display());
+    </script>
+</body>
+</html>

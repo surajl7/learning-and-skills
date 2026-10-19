@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilevel Inheritance</title>
+</head>
+<body>
+    <script>
+        class company {
+            constructor() {
+                this.company_name = "Honda";
+            }
+        }
+        class bike extends company {
+            constructor(bike_name){
+                super();
+                this.bike_name = bike_name;
+            }
+        }
+        class model extends bike {
+            constructor(bike_name, price) {
+                super(bike_name);
+                this.price = price;
+            }
+        }
+
+        let m = new model("Shine", 70000);
+        document.writeln(m.company_name + " " + m.bike_name + " " + m.price);
+    </script>
+</body>
+</html>

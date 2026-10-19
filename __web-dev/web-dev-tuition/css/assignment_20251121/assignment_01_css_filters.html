@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters - Brightness</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #img_brightness{
+            filter: brightness(1000%);
+        }
+        #img_blur{
+            filter: blur(2px);
+        }
+        #img_invert{
+            filter: invert(60);
+        }
+        #img_saturate{
+            filter: saturate(40);
+        }
+        #img_drop_shadow{
+            filter: drop-shadow(10px 20px 30px yellow);
+        }
+        #img_contrast{
+            filter: contrast(50%);
+        }
+        #img_opacity{
+            filter: opacity(40%);
+        }
+        #img_hue_rotate{
+            filter: hue-rotate(240deg);
+        }
+        #img_grayscale{
+            filter: grayscale(80%);
+        }
+        #img_sepia{
+            filter: sepia(80%);
+        }
+    </style>
+</head>
+<body>
+    <h2>Original Image</h2>
+    <img src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>brightness(1000%)</h2>
+    <img id="img_brightness" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>blur(2px)</h2>
+    <img id="img_blur" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>invert(60)</h2>
+    <img id="img_invert" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>saturate(40)</h2>
+    <img id="img_saturate" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>drop-shadow(10px 20px 30px yellow);</h2>
+    <img id="img_drop_shadow" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>contrast(50%)</h2>
+    <img id="img_contrast" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>opacity(40%);</h2>
+    <img id="img_opacity" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h2>hue-rotate(240deg)</h2>
+    <img id="img_hue_rotate" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h3>grayscale(80%)</h3>
+    <img id="img_grayscale" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+    <h3>sepia(80%)</h3>
+    <img id="img_sepia" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+    <hr>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Bottom</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+        li a{
+            display: block;
+            color: blue;
+            font-size: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-bottom: 1px solid blue;
+        }
+        ul:last-child{
+            border-bottom: none;
+        }
+        .active{
+            background-color: orange;
+            color: white;
+        }
+        li a:hover{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Script Element</title>
+    <script>
+        function fun(){
+            document.getElementById("p").style.color="green";
+        }
+    </script>
+</head>
+<body>
+    <h2>Script within Head element</h2>
+    <p id="p">This will change the color</p>
+    <button type="button" onclick="fun()">Click me</button>
+    <br>
+    <hr>
+    <h4>If we want to use some external JavaScript file then it can be applied by:</h4>
+    <p>
+        &lt script src=".js file_path" &gt
+    </p>
+</body>
+</html>

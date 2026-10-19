@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript local variable</title>
+    <script>
+        function abc(){
+            var x = 10; //local variable
+            document.write("Value of x from inside function: " + x + "<br>")
+            // return x;
+        }
+        document.write("Value of x from outside function: " + x);
+        document.write("<hr>");
+        if(10 < 13){
+            var y = 20; // var is local scoped
+        }
+        document.write("Value of y: " + y);
+    </script>
+</head>
+<body>
+</body>
+</html>

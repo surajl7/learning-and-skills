@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(1fr, 4); */
+    grid-gap: 40px;
+    /* grid-template-rows: 20px 20px 20px 20px; */
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns:1fr 2fr;
+
+}
+
+/* 
+.items{
+    background-color: green;
+} */
+
+.items{
+    border: 2px solid black;
+}
+
+.green{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+

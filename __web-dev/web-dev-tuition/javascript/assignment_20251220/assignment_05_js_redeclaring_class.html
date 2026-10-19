@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-declaring class</title>
+</head>
+<body>
+    <script>
+        // declaring class
+        var emp = class{
+            // Initializing an object
+            constructor(id, name){
+                this.id = id;
+                this.name = name;
+            }
+            // declaring method
+            detail(){
+                document.writeln(this.id + " " + this.name + "<br>")
+            }
+        }
+        //passing object to a variabl
+        var e1 = new emp(101, "Martin Roy");
+        var e2 = new emp(102, "Duke William");
+        e1.detail();    // calling method
+        e2.detail();    
+
+        var emp = class{
+            //initializing  an object
+            constructor(id, name){
+                this.id = id;
+                this.name = name;
+            }
+            detail(){
+                document.writeln(this.id + " " + this.name + "<br>")
+            }
+        }
+        //passing object to variable
+        var e1 = new emp(103, "James Bella");
+        var e2 = new emp(104, "Nike Johnson");
+        e1.detail(); // calling method
+        e2.detail();
+    </script>
+</body>
+</html>

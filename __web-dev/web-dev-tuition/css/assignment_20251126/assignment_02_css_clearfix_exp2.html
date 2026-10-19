@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clearfix</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 5px;
+            background-color: pink;
+            font-size: 20px;
+        }
+        .img1{
+            float: right;
+            border: 3px solid blue;
+        }
+        p{
+            font-size: 20px;
+            clear: right;
+        }
+        .jpt::after{
+            content: 'some text here.';
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without Clearfix</h1>
+    <div>
+        <img class="img1" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+        Welcome to java. Here, you can find the best tutorials that are easy to read and help
+        you to clear your concepts.
+    </div>
+    <p>Another clearfix method</p>
+    <h1>With Clearfix</h1>
+    <div class="jpt">
+        <img class="img1" src="../../artifacts/sample_image_the_boys.jpg" alt="sample_image_the_boys">
+        Welcome to the java.com. Here, you can find the best tutorials that are easy to read and
+        help you clear your concepts.
+    </div>
+</body>
+</html>

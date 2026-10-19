@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Checkbox type example 2</title>
+    <style>
+        .container{
+            display: block;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        /* Hide the original checkbox */
+        input[type=checked]{
+            visibility: hidden;
+        }
+        /* creating a custom checkbox */
+        .mark{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: lightgray;
+        }
+        /* background color to be shown when hovering over checkbox */
+        .container:hover input ~ .mark{
+            background-color: blue;
+        }
+        /* checkmark to be shown in checkbox */
+        /* It will not be shown when unchecked */
+        .mark:after{
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        /* display checkmark when checked */
+        .container input:checked ~ .mark:after{
+            display: block;
+        }
+        /* creating a square to be the sign of checkmark */
+        .container .mark:after{
+            left: 6px;
+            bottom: 6px;
+            width: 6px;
+            height: 6px;
+            border: solid white;
+            border-width: 4px 4px 4px 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qualification</h1>
+    <label class="container">
+        MCA
+        <input type="checkbox">
+        <span class="mark"></span>
+    </label>
+    <label class="container">
+        BCA
+        <input type="checkbox">
+        <span class="mark"></span>
+    </label>
+    <label class="container">
+        12th
+        <input type="checkbox">
+        <span class="mark"></span>
+    </label>
+    <label class="container">
+        10th
+        <input type="checkbox" checked="check">
+        <span class="mark"></span>
+    </label>
+</body>
+</html>

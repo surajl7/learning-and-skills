@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <style>
+        p{
+            background-color: pink;
+            border: 2px dotted rgb(241, 101, 125);
+        }
+        p.ex1{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        p.ex2{
+            margin: 50px 100px 150px 200px;
+        }
+        p.ex3{
+            margin: 50px 100px 150px;
+        }
+        p.ex4{
+            margin: 50px 100px;
+        }
+        p.ex5{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph is not displyed with specified margin.</p>
+    <hr>
+    <p class="ex1">
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 100px;
+        margin-left: 100px;
+    </p>
+    <hr>
+    <p class="ex2">margin: 50px 100px 150px 200px;</p>
+    <hr>
+    <p class="ex3">margin: 50px 100px 150px;</p>
+    <hr>
+    <p class="ex4">margin: 50px 100px;</p>
+    <hr>
+    <p class="ex5">margin: 50px;</p>
+</body>
+</html>

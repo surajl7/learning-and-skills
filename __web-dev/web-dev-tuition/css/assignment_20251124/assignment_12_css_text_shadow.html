@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Shadow</title>
+    <style>
+        p.simple{
+            text-shadow: 3px 3px red;
+        }
+        p.fuzzy{
+            text-shadow: 3px 3px 3px violet;
+            font-size: 30px;
+            text-align: center;
+        }
+        p.multi{
+            text-shadow: -3px -3px 3px blue, 3px 3px 3px red;
+            font-size: 30px;
+            text-align: center;
+        }
+        .glow{
+            text-shadow: 0 0 .1em cyan;
+            background-color: black;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p class="simple">
+        Simple Shadow
+    </p>
+    <hr>
+    <p class="fuzzy">
+        Fuzzy Shadow
+    </p>
+    <hr>
+    <p class="multi">
+        Multiple Shadows
+    </p>
+    <hr>
+    <div class="glow">
+        Glow Effect
+    </div>
+</body>
+</html>

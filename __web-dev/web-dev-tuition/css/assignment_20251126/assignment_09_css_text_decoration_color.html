@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Decoration Color</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        p{
+            font-size: 30px;
+        }
+        #p1{
+            text-decoration: underline double cyan;
+        }
+        #p2{
+            text-decoration: line-through dashed green;
+        }
+        #p3{
+            text-decoration: dotted overline blue;
+        }
+        #p4{
+            color: red; /*This is content or text color*/
+            text-decoration: lightblue wavy overline underline line-through; /* color mention here will be applied for text-decoration*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS</h1>
+    <h2>text-decoration: text-decoration-line text-decoration-style;</h2>
+    <div>
+        <p id="p1">This is double undeline</p>
+        <p id="p2">This is dashed line-through</p>
+        <p id="p3">This is dotted overline</p>
+        <p id="p4">This is the wavy combination of lines</p>
+    </div>
+</body>
+</html>

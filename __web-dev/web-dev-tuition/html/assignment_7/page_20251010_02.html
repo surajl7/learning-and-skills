@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 | Registration From</title>
+</head>
+<body>
+    <center>
+        <h1>Assignment 7 | Page 2 | Date: 2025-10-10</h1>
+    <button style="height: 70px; width: 70px; "><a href="..\home\home_page.html">HOME</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\assignment_7\page_20251010_01.html">BACK</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\assignment_8\page_20251011_01.html">NEXT</a></button>
+    </center>
+    <hr>
+    <h4>Example 1:</h4>
+    <center>
+        <form action="#">
+            <fieldset>
+                <legend>Registration Form 1: </legend>
+            <table border="0">
+                <tr>
+                    <td>Enter your full name: </td>
+                    <td>
+                        <input type="text" name="user_name" placeholder="Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your email: </td>
+                    <td>
+                        <input type="email" name="user_email" id="user_email" placeholder="Your Email id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your password: </td>
+                    <td>
+                        <input type="password" name="user_password" id="user_password" placeholder="********">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm your password: </td>
+                    <td>
+                        <input type="password" name="user_password" id="user_password" placeholder="**********">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select your gender: </td>
+                    <td>
+                        <input type="radio" name="user_gender" id="user_gender" value="male">Male
+                        <br>
+                        <input type="radio" name="user_gender" id="user_gender" value="female">Female
+                        <br>
+                        <input type="radio" name="user_gender" id="user_gender" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your Address: </td>
+                    <td>
+                        <textarea name="user_address" id="user_address" placeholder="Enter Your Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="0">
+                        <input type="button" id="button_save" name="button_save" value="Save">
+                        <input type="reset" id="button_reset" name="button_reset" value="Reset">
+                    </td>
+                    <td>
+                        <input type="submit" id="button_submit" name="button_submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+    </center>
+    <hr>
+    <h4>Example 2:</h4>
+    <center>
+        <form action="#">
+            <fieldset>
+                <legend>Registration Form 2:</legend>
+            <table border="0">
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_name" class="lable">
+                            Enter Name: 
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" value="" id="register_name" style="width: 160px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_password" class="lable">
+                            Enter Password: 
+                        </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="register_password" style="width: 160px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_email" class="lable">
+                            Enter Email
+                        </label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" value="" id="register_email" style="width: 160px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_gender" class="label">
+                            Enter Gender:
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="register_gendermale" value="male">
+                        <label for="register_gendermale">Male</label>
+                        <input type="radio" name="gender" id="register_genderfemale" value="female">
+                        <label for="register_genderfemale">Female</label>
+                        <input type="radio" name="gender" id="register_genderother" value="other">
+                        <label for="register_genderother">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_country" class="lable">
+                            Select Country: 
+                        </label>
+                        <td>
+                            <select name="country" id="register_country" style="width: 160px;">
+                                <option value="india">India</option>
+                                <option value="japan">Japan</option>
+                                <option value="russia">Russia</option>
+                                <option value="germany">Germany</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_programming_language" class="lable">
+                            Select Programming Language: 
+                        </label> 
+                    </td>
+                    <td>
+                        <input type="checkbox" name="register_programming_language_1" value="c"> C
+                        <br>
+                        <input type="checkbox" name="register_programming_language_2" value="cpp"> C++
+                        <br>
+                        <input type="checkbox" name="register_programming_language_3" value="python"> Python
+                        <br>
+                        <input type="checkbox" name="register_programming_language_4" id="java"> Java
+                        <br>
+                        <input type="checkbox" name="register_programming_language_5" id="go"> Go
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                        <div align="center">
+                            <input type="button" id="register_save" value="Save">
+                            <input type="reset" id="register_reset" value="Reset">
+                            <input type="submit" id="register_0" value="Register">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

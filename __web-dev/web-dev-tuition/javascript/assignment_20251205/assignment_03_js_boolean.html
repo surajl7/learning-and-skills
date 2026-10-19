@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Boolean</title>
+</head>
+<body>
+    <script>
+        // Boolean b = new Boolean(value);
+        document.writeln(10<20);
+        document.writeln("<br>");
+        document.writeln(10>5);
+    </script>
+    <br><hr>
+    <h3>JavaScript Boolean Properties and Methods</h3>
+    <script>
+        // Constructor property
+        let b = new Boolean(true);
+        document.writeln("Constructor:", b.constructor);
+        document.writeln("<br><hr>");
+
+        // Adding to prototype
+        Boolean.prototype.describe = function() {
+            return "My boolean value is: " + this.valueOf();
+        };
+        document.writeln(b.describe());
+        document.writeln("<br><hr>");
+
+        // toString()
+        document.writeln("toString:", b.toString());
+        document.writeln("<br><hr>");
+
+        // valueOf()
+        document.writeln("valueOf:", b.valueOf());
+        document.writeln("<br><hr>");
+
+        // toSource (Firefox only)
+        try {
+            document.writeln("toSource:", b.toSource());
+        } catch (e) {
+            document.writeln("toSource not supported in this browser");
+        }
+        document.writeln("<br><hr>");
+    </script>
+</body>
+</html>

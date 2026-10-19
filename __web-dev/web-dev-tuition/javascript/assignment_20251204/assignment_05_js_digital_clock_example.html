@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <h3>JavaScript Digital Clock Example</h3>
+    <p>Current Time: <span id="txt"></span></p>
+    <script>
+        window.onload=function(){
+            getTime();
+        };
+        function getTime(){  
+            var today=new Date();  
+            var h=today.getHours();  
+            var m=today.getMinutes();  
+            var s=today.getSeconds();  
+            // add a zero in front of numbers<10  
+            m=checkTime(m);  
+            s=checkTime(s);  
+            document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+            // document.writeln(h+":"+m+":"+s)
+            setTimeout(function(){getTime()},1000);  
+        }  
+        //setInterval("getTime()",1000);//another way  
+        function checkTime(i){  
+            if (i<10){  
+                i="0" + i;  
+            }  
+            return i;  
+        }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different level of nesting counters</title>
+    <style>
+        ol{
+            counter-reset: section;
+            list-style-type: none
+        }
+        li::before{
+            counter-increment: section;
+            content: "Section " counter(section) "."" ";
+        }
+    </style>
+</head>
+<body>
+    <h2>Different level of Nesting counters</h2>
+    <ol>
+        <li>item</li>
+        <li>
+            item
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <p>
+        <b>Note:</b>
+        IE8 supports these properties only if a !DOCTYPE is specified.
+    </p>
+</body>
+</html>

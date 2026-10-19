@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String</title>
+</head>
+<body>
+    <h3>String literal</h3>
+    <script>
+        var stringname = "String Value";
+        var str = "This is string literal";
+        document.writeln(str);
+    </script>
+    <br><hr>
+    <h3>By String Object</h3>
+    <script>
+        var stringname = new String("Hello JavaScript String");
+        document.writeln(stringname);
+    </script>
+    <br><hr>
+    <h3>JavaScript String CharAt Index Method</h3>
+    <script>
+        var str = "JavaScript";
+        document.writeln("Character at index 2: " + str.charAt(2));
+    </script>
+    <br><hr>
+    <h3>JavaScript String concat(str) Method</h3>
+    <script>
+        var s1 = "javascript";
+        var s2 = "concat example";
+        var s3 = s1.concat(s2);
+        document.writeln(s3);
+    </script>
+    <br><hr>
+    <h3>JavaScript String indexOf(str) Method</h3>
+    <script>
+        var s1 = "Javascript from Java indexof";
+        var n = s1.indexOf("f");
+        document.writeln(n);
+    </script>
+    <br><hr>
+    <h3>JavaScript String lastIndexOf(str) Method</h3>
+    <script>
+        var s1 = "JavaScript from java indexOf";
+        var n = s1.lastIndexOf("j");
+        document.writeln(n);
+    </script>
+    <br><hr>
+    <h3>JavaScript String toLowerCase() Method</h3>
+    <script>
+        var s1 = "JavaScript toLowerCase Example";
+        var s2 = s1.toLowerCase();
+        document.writeln(s2);
+    </script>
+    <br><hr>
+    <h3>JavaScript String toUpperCase() Method</h3>
+    <script>
+        var s1 = "JavaScript toUpperCase Example";
+        var s2 = s1.toUpperCase();
+        document.writeln(s2);
+    </script>
+    <br><hr>
+    <h3>JavaScript String slice(beginIndex, endIndex) Method</h3>
+    <script>
+        var s1 = "abcdefgh";
+        var s2 = s1.slice(2,5);
+        document.writeln(s2);
+    </script>
+    <br><hr>
+    <h3>JavaScript String trim() Method</h3>
+    <script>
+        var s1 = "  javascript trim  ";
+        document.writeln(s1, "<br>");
+        var s2 = s1.trim();
+        document.writeln(s2);
+    </script>
+    <br><hr>
+    <h3>JavaScript String split() Method</h3>
+    <script>
+        var str = "This is Java Website";
+        document.writeln(str.split(" ")); // split the given string.
+    </script>
+</body>
+</html>

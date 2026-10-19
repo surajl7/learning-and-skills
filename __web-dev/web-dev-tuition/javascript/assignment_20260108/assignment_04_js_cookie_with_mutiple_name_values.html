@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie with multiple Name-Value pairs</title>
+</head>
+<body>
+    Name: <input type="text" id="name"> <br>
+    Email: <input type="email" id="email"> <br>
+    Course: <input type="text" id="course"> <br>
+    <input type="button" value="Set Cookie" onclick="setCookie()">
+    <input type="button" value="Get Cookie" onclick="getCookie()">
+    <script>
+        function setCookie(){
+            // Declaring 3 key-value pairs
+            var info = {
+                Name: document.getElementById("name").value, 
+                Email: document.getElementById("email").value, 
+                Course: document.getElementById("course").value
+            };
+
+            // Convert Object to JSON string
+            var jsonString = JSON.stringify(info);
+
+            // Providing all 3 key-value pairs in a single cookie
+            document.cookie = "userInfo=" + encodeURIComponent(jsonString) + "; path=/";
+
+            alert(document.cookie)
+            alert("Cookie set successfully!");
+            
+        }
+
+        function getCookie(){
+            alert(document.cookie)
+            var cookies = document.cookie.split('; ');
+            for(var i=0; i < cookies.length; i++){
+                var [key, value] = cookies[i].split('=');
+                if(key === "userInfo"){
+                    var decoded = decodeURIComponent(value);
+                    var userInfo = JSON.parse(decoded);
+                    alert(
+                        "Name: " + userInfo.Name + "\n" +
+                        "Email: " + userInfo.Email + "\n" +
+                        "Course: " + userInfo.Course
+                    );
+                    return;
+                }
+            }
+            alert("Cookie not available");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Expires Attribute</title>
+</head>
+<body>
+    <input type="button" value="setCookie" onclick="setCookie()">
+    <input type="button" value="getCookie" onclick="getCookie()">
+    <script>
+        function setCookie(){
+            // document.cookie = "username=Duke Martin; expires=Sat, 10 Jan 2026 12:00:00 GMT;";
+            document.cookie = "username=Duke Martin; expires=Sat, 10 Jan 2026 12:00:00 GMT; path=/";
+        }
+        function getCookie(){
+            if(document.cookie.length != 0){
+                // alert(document.cookie)
+
+                // var array1 = document.cookie.split("; ");
+                // let count = 0;
+                // for (let i=0; i<array1.length; i++){
+                //     let array2 = array1[i].split("=");
+                //     for (let j=0; j<array2.length; j++){
+                //         document.writeln(count + " " + array2[j] + "<br>");
+                //         count++;
+                //     }
+                // }
+                
+                var array = document.cookie.split("=");
+                alert("Name=" + array[0] + " " + "Value=" + array[1]);
+            }
+            else{
+                alert("Cookie not available");
+            }
+        }
+    </script>
+</body>
+</html>

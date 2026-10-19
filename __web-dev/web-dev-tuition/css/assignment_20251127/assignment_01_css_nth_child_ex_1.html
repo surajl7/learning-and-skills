@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS nth Child Selector</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p:nth-child(3n+4){
+            background: yellow;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>0: Hello World</h1>
+    <h2>1: Welcome to the Java</h2>
+    <p>2: It will not be affected.</p>
+    <p>3: It will be affected.</p>
+    <p>4: Not affected.</p>
+    <p>5: Not affected.</p>
+    <p>6: It will be affected.</p>
+    <p>7: Not affected.</p>
+    <p>8: Not affected.</p>
+</body>
+</html>

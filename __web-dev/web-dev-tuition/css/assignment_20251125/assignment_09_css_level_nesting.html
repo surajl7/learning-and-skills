@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Nesting</title>
+    <style>
+        .level-1{
+            counter-reset: section;
+            list-style-type: none;
+        }
+        .level-2{
+            counter-reset: subsection;
+            list-style-type: none;
+        }
+        .level-3{
+            counter-reset: subsubsection;
+            list-style-type: none;
+        }
+        .level-1 > li {
+            counter-increment: section;
+        }
+        .level-1 > li::before{
+            content: counter(section) ". ";
+        }
+        .level-2 > li {
+            counter-increment: subsection;
+        }
+        .level-2 > li::before{
+            content: counter(section) "." counter(subsection) " ";
+        }
+        .level-3 > li {
+            counter-increment: subsubsection;
+        }
+        .level-3 > li::before{
+            content: counter(section) "." counter(subsubsection) "." counter(subsubsection) " ";
+        }
+    </style>
+</head>
+<body>
+    <h2>Different level of Nesting counters</h2>
+    <ol class="level-1">
+        <li>item</li>
+        <li>
+            item
+            <ol class="level-2">
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                    <ol class="level-3">
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <p>
+        <b>Note:</b>
+        IE8 supports these properties only if a !DOCTYPE is specified.
+    </p>
+</body>
+</html>

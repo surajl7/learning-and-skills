@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining multiple images</title>
+    <style>
+        div{
+            width: 250px;
+            height: 250px;
+            border: 2px solid red;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #div1{
+            background-image: url("../../artifacts/sample-image-1.jpg"), url("../../artifacts/sample-image-2.jpg");
+            background-size: 300px 150px, cover;
+        }
+        #div2{
+            background-image: url("../../artifacts/sample-image-1.jpg"), url("../../artifacts/sample-image-2.jpg");
+            background-size: 200px 150px, 300px 200px;
+        }
+        #div3{
+            background-image: url("../../artifacts/sample-image-1.jpg"), url("../../artifacts/sample-image-2.jpg");
+            background-size: 150px 175px, contain;
+        }
+    </style>
+</head>
+<body>
+    <h2>background-size: 300px 150px, cover;</h2>
+    <div id="div1"></div>
+    <h2>background-size: 200px 150px, 300px 200px;</h2>
+    <div id="div2"></div>
+    <h2>background-size: 150px 175px, contain;</h2>
+    <div id="div3"></div>
+</body>
+</html>

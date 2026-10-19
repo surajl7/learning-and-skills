@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 | Page 2</title>
+</head>
+<body>
+    <center>
+        <h1>Assignment 8 | Page 2 | Date: 2025-10-11</h1>
+    <button style="height: 70px; width: 70px; "><a href="..\home\home_page.html">HOME</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\assignment_8\page_20251011_01.html">BACK</a></button>
+    <button style="height: 70px; width: 70px;"><a href="..\home\home_page.html">NEXT</a></button>
+    </center>
+    <hr>
+    <h4>HTLM Method Attributes</h4>
+    <p>
+        <mark>
+            Form with just action (Default: Open in self page)
+        </mark>
+    </p>
+    <form action="action.html" method="post">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            Form with target - self
+        </mark>
+    </p>
+    <form action="action.html" method="post" target="_self">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            Form with target - blank
+        </mark>
+    </p>
+    <form action="action.html" method="post" target="_blank">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML Autocomplete Attributes (Default - on)
+        </mark>
+    </p>
+    <form action="action.html" method="get" target="_blank" autocomplete="on">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+        <hr>
+    <p>
+        <mark>
+            HTML Autocomplete Attributes - Off
+        </mark>
+    </p>
+    <form action="action.html" method="get" target="_blank" autocomplete="off">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML enctype Attributes - Default: application/x-www-form-urlencoded
+        </mark>
+        <br>
+        application/x-www-form-urlencoded: 
+        <br>
+        It is default encoding type if the enctype
+        attribute is not included in the form. All characters are encoded before submitting
+        the form.
+    </p>
+    <form action="action.html" method="post" enctype="application/x-www-form-urlencoded">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            enctype - multipart/form-data
+        </mark>
+        <br>
+        multipart/form-data:
+        <br>
+        It does not encode any character. It is used when our form contains file-upload controls.
+    </p>
+    <form action="action.html" method="post" enctype="multipart/form-data">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            enctype - text/plain
+        </mark>
+        <br>
+        In this encoding type only space are encoding into + symbol and no any other special character encoded.
+    </p>
+    <form action="action.html" method="post" enctype="text/plain">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML novalidate attribute HTML5
+        </mark>
+        <br>
+        The no valicate attribute is newly added Boolean attribute of HTML5. If we apply this
+        attribute in form then it does not perform any type of validation and submit the form.
+    </p>
+    <form action="action.html" method="post" novalidate>
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">
+            User Password:
+        </label>
+        <br>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML5 required attribute
+        </mark>
+    </p>
+    <form action="">
+        <label for="">
+            Enter your Email-address:
+        </label>
+        <br>
+        <input type="text" name="uname" required>
+        <br><br>
+        <label for="">
+            Enter your password
+        </label>
+        <br>
+        <input type="password" name="pass" required>
+        <br><br>
+        <input type="submit" value="login">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML Autofocus attribute
+        </mark>
+        <br>
+        The autofocus is a Boolean attribute which enables a field automatically
+        focused when a webpage loads.
+    </p>
+    <label for="">
+        Enter your email-address
+    </label>
+    <br>
+    <input type="text" name="uname" autofocus>
+    <br><br>
+    <label for="">
+        Enter your password
+    </label>
+    <br>
+    <input type="password" name="pass">
+    <br><br>
+    <input type="submit" value="login">
+    <hr>
+    <p>
+        <mark>
+            HTML placeholder attribute
+        </mark>
+    </p>
+    <form action="">
+        <label for="">
+            Enter your name
+        </label>
+        <br>
+        <input type="text" name="uname" placeholder="Your Name">
+        <br><br>
+        <label for="">
+            Enter your email address
+        </label>
+        <br>
+        <input type="email" name="email" placeholder="example@yourmail.com">
+        <br><br>
+        <label for="">
+            Enter your password
+        </label>
+        <br>
+        <input type="password" name="pass" placeholder="Your Password">
+        <br><br>
+        <input type="submit" value="login">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML disabled attribute
+        </mark>
+        <br>
+        The HTML disabled attribute when applied then it disable that input field.
+        The disabled field not allow the user to interact with that field.
+        The disabled input filed does not receive click events, and these input value
+        will not be sent to the server when submitting the form.
+    </p>
+    <form action="action.html" method="post">
+        <label for="">
+            User Name:
+        </label>
+        <br>
+        <input type="text" name="uname" value="admin" placeholder="user_name" disabled>
+        <br><br>
+        <label for="">
+            Your Password:
+        </label>
+        <br>
+        <input type="password" name="upassword">
+        <br><br>
+        <input type="submit" value="login">
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML size attribute
+        </mark>
+        <br>
+        The size attribute controles the size of the input field in typed characters.
+    </p>
+    <form action="" name="fcontrol">
+        <label for="">
+            Account holder name
+        </label>
+        <br>
+        <input type="text" name="uname" size="40" required>
+        <br><br>
+        <label for="">Account Number</label>
+        <br>
+        <input type="text" name="acc_no" size="30" required>
+        <br><br>
+        <label for="">
+            CVV
+        </label>
+        <br>
+        <input type="text" name="cvv" size="1" required>
+        <br><br>
+        <!-- <input type="submit" value="submit"> -->
+    </form>
+    <hr>
+    <p>
+        <mark>
+            HTML form attribute
+        </mark>
+        <br>
+        HTML form attribute allows a user to specify an input outside the form
+        but remains the part of the parent form
+    </p>
+    <br>
+    <label for="">Enter Email Address:</label>
+    <br>
+    <input type="email" name="email" form="fcontrol" required>
+    <br><br>
+    <input type="submit" form="fcontrol">
+</body>
+</html>

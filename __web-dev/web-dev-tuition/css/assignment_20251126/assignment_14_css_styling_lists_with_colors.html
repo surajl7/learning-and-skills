@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Lists with Colors</title>
+    <style>
+        .order{
+            list-style: upper-alpha;
+            background: pink;
+            padding: 20px;
+        }
+        .order li{
+            background: lightblue;
+            padding: 10px;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .unorder{
+            list-style: square inside;
+            /* list-style: square outside; */
+            background-color: cyan;
+            padding: 20px;
+        }
+        .unorder li{
+            background: green;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the javaTpoint.com</h1>
+    <h2>Order Lists</h2>
+    <ol class="order">
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THREE</li>
+    </ol>
+    <h2>Unordered lists</h2>
+    <ul class="unorder">
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THREE</li>
+    </ul>
+</body>
+</html>

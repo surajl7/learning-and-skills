@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Inheritance</title>
+</head>
+<body>
+    <script>
+        class company {
+            constructor() {
+                this.company_name = "Honda";
+            }
+        }
+        class bike extends company {
+            constructor(bike_name){
+                super();
+                this.bike_name = bike_name; 
+            }
+        }
+        // Mixin
+        const features = {
+            showFeatures() {
+                return "ABS Enabled";
+            }
+        };
+        // Hybrid inheritance 
+        Object.assign(Bike.prototype, Features);
+
+        class model extends bike {
+            constructor(name, price) {
+                super(name);
+                this.price = price;
+            }
+        }
+        let h = new model("Shine", 70000);
+        document.writeln(h.company_name + " " + h.bike_name + " " + h.price + " " + h.showFeatures());
+    </script>
+</body>
+</html>

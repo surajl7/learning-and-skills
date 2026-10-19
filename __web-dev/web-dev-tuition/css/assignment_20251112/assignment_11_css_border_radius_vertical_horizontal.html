@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <style>
+        div{
+            padding: 50px;
+            border: 6px ridge red;
+            width: 300px;
+            margin: 20px;
+            font-weight: bold;
+            height: 175px;
+            float: left;
+            font-size: 25px;
+        }
+        #one{
+            border-radius: 10% / 50%;
+            background: lightgreen;
+        }
+        #two{
+            border-radius: 120px / 100px 10px;
+            background: lightblue;
+        }
+        #three{
+            border-radius: 50% 10em / 10% 20em;
+            background: lightpink;
+        }
+        #four{
+            border-radius: 100px 10em 120px / 30%;
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="one">
+            <h2>Welcome to JavaTpoint.com</h2>
+            <p>border-radius: 10% / 50%;</p>
+        </div>
+        <div id="two">
+            <h2>Welcome to JavaTpoint.com</h2>
+            <p>border-radius: 120px / 100px 10px;</p>
+        </div>
+        <div id="three">
+            <h2>Welcome to JavaTpoint.com</h2>
+            <p>border-radius: 50% 10em / 10% 20em;</p>
+        </div>
+        <div id="four">
+            <h2>Welcome to JavaTpoint.com</h2>
+            <p>border-radius: 100px 10em 120px / 30%;</p>
+        </div>
+    </center>
+</body>
+</html>

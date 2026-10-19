@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript dblclick addEventListener</title>
+</head>
+<body>
+    <h1 id="heading">Hello World :) :)</h1>
+    <h2>Double Click the text "Hello World" to see the effect.</h2>
+    <p>
+        This is an example of creating the double click event using the 
+        <b>addEventListener() method.</b> 
+    </p>
+    <script>
+        document.getElementById("heading").addEventListener("dblclick", fun);
+        function fun(){
+            document.getElementById("heading").innerHTML = "Welcome to the java.com";
+        }
+    </script>
+</body>
+</html>

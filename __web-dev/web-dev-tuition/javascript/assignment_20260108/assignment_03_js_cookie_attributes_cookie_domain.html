@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cookie Domain</title>
+</head>
+<body>
+    <h1>Cookie Domain Attribute Demo</h1>
+    <button id="setCookies">Set Cookies</button>
+    <button id="showCookies">Show Cookies</button>
+
+    <pre id="output"></pre>
+    <script>
+        // Utility to display messages
+        function log(msg){
+            document.getElementById('output').textContent += msg + "\n";
+        }
+        // Function to set cookies with different domain attributes
+        function setCookies(){
+            // IMPORTANT: You must run this script on java.com or its subdomains!
+
+            // Set a cookie valid only for java.com and all its subdomains
+            document.cookie = "cookie1=hello; domain=java.com; path=/; SameSite=Lax";
+
+            // Set a cookie valid only for the subdomain training.java.com
+            // This will only work if you are on training.java.com
+            document.cookie = "cookie2=world; domain=training.java.com; path=/; SameSite=Lax";
+
+            log("Cookies have been set!");
+        }
+
+        // Function to read and display all cookies available on the current domain
+        function showCookies(){
+            let cookies = document.cookie;
+            if (!cookies){
+                log("No cookies found for this domain.");
+            }else{
+                log("Cookies for this domain:");
+                log(cookies);
+            }
+        }
+
+        document.getElementById('setCookies').addEventListener('click', () => {
+            document.getElementById('output').textContent = ""; //Clear output
+            setCookies();
+        });
+
+        document.getElementById('showCookies').addEventListener('click', () => {
+            document.getElementById('output').textContent = "";
+            showCookies();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj-TimeTable</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            /* shorthead forborder attriutes */
+            border-collapse: collapse;
+            /* for displaying border in a single line  */
+        }
+         
+        th,td{
+            padding-left: 15px;
+            padding-top: 8px;
+            padding-right: 15px;
+            padding-bottom: 8px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 align="center">D. Y. Patil College of Engineering and Technology, Kolhapur</h3>
+    <h4 align="center">Department of Electronics Engineering</h4>
+    <!-- ------------------------------------------------------------ -->
+    <table align="center">
+        <caption>Time Table</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="6">Time</th>
+                <tr>
+                <th>09:00 am to 10:00 am</th>
+                <th>10:00 am to 11:00 am</th>
+                <th>11:10 am to 12:10 pm</th>
+                <th>12:10 am to 01:10 pm</th>
+                <th>02:00 pm to 03:00 pm</th>
+                <th>03:00 pm to 04:00 pm</th>
+                </tr>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- Monday -->
+            <tr>
+                <td>Monday</td>
+                <td colspan="2" style="color: red;">MWE</td>
+
+                <td colspan="2" style="color: yellowgreen;">PED</td>
+
+                <td colspan="2" style="color: blue;">WCN</td>
+            </tr>
+
+            <!-- Tuesday -->
+
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="2" style="color: blue;">WCN</td>
+
+                <td colspan="2" style="color: red;">MWE</td>
+
+                <td colspan="2" style="color: yellowgreen;">PED (PR)</td>
+               
+            </tr>
+
+            <!-- Wednesday -->
+
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="2" style="color: yellowgreen;">PED</td>
+
+                <td colspan="2" style="color: blue;">WCN</td>
+
+                <td colspan="2" style="color: red;">MWE (PR)</td>
+            </tr>
+
+            <!-- Thursday -->
+            
+            <tr>
+                <td>Thursday</td>
+                <td colspan="2">ELECTIVE-II</td>
+
+                <td colspan="4">Project-II</td>
+
+            </tr>
+
+
+            <!-- Friday -->
+
+            <tr>
+                <td>Friday</td>
+                <td colspan="2">ELECTIVE-II</td>
+
+                <td style="color: red;">MWE (PR)</td>
+
+                <td style="color: blue;">WCN</td>
+
+                <td colspan="2">Project-II</td>
+            </tr>
+
+            <!-- Saturday -->
+
+            <tr>
+                <td>Saturday</td>
+                <td>PED</td>
+
+                <td colspan="5">Project-II</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <table align="center">
+        <caption>Note</caption>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Teacher</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td style="color: red;">MWE</td>
+                    <td>M. V. B.</td>
+                </tr>
+
+                <tr>
+                    <td style="color: yellowgreen;">PED</td>
+                    <td>T. B. MP.</td>
+                </tr>
+
+                <tr>
+                    <td style="color: blue;">WCN</td>
+                    <td>N. S. V.</td>
+                </tr>
+
+                <tr>
+                    <td>ELECTIVE-II</td>
+                    <td>S. V. S.</td>
+                </tr>
+
+                <tr>
+                    <td>Project-II</td>
+                    <td>S. R. K.</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity</title>
+    <style>
+        img.trans{
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* For IE8 and earlier*/
+        }
+    </style>
+</head>
+<body>
+    <p>Normal Image</p>
+    <img src="../../artifacts/sample_image_the_boys.jpg" alt="sample-image-the-boys">
+    <p>Transparent Image</p>
+    <img class="trans" src="../../artifacts/sample_image_the_boys.jpg" alt="transparent-image">
+</body>
+</html>

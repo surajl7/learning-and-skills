@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h2::before{
+            counter-increment: section;
+            content: "Section " counter(section) ":";
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of CSS Counters:</h1>
+    <h2>Java Tutorial</h2>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Oracle Tutorial</h2>
+    <p>
+        <strong>Note:</strong>
+        IE8 supports these properties only if a !DOCTYPE is specified.
+    </p>
+</body>
+</html>

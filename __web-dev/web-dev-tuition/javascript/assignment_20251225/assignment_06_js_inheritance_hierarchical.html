@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchical Inheritance</title>
+</head>
+<body>
+    <script>
+        class bike {
+            constructor(){
+                this.company_name = "Honda";
+            }
+        }
+        class shine extends bike {
+            constructor(price){
+                super();
+                this.bike_name = "Shine";
+                this.price = price;
+            }
+        }
+        class unicorn extends bike {
+            constructor(price) {
+                super();
+                this.bike_name = "Unicorn";
+                this.price = price;
+            }
+        }
+        let b1 = new shine(70000);
+        let b2 = new unicorn(100000);
+        document.writeln(b1.company_name + " " + b1.bike_name + " " + b1.price + "<br>");
+        document.writeln(b2.company_name + " " + b2.bike_name + " " + b2.price + "<br>");
+    </script>
+</body>
+</html>

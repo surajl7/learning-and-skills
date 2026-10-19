@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Inheritance</title>
+</head>
+<body>
+    <script>
+        const engine = {
+            engineType() {
+                return "Petrol Engine";
+            }
+        };
+        const wheels = {
+            wheelCount() {
+                return "2 Wheels";
+            }
+        }
+        class bike {
+            constructor(name) {
+                this.name = name;
+            }
+        }
+        //Applying multiple inheritance using mixins
+        Object.assign(bike.prototype, engine, wheels);
+
+        let b = new bike("Shine");
+        document.writeln(b.name + "<br>");
+        document.writeln(b.engineType() + "<br>");
+        document.writeln(b.wheelCount());
+    </script>
+</body>
+</html>

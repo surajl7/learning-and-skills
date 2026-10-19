@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Method</title>
+</head>
+<body>
+    <h3>JavaScript Array Concat Method</h3>
+    <script>
+        var arr1 = ["C", "C++", "Python"];
+        var arr2 = ["Java", "JavaScript", "Android"];
+        var result = arr1.concat(arr2);
+        document.writeln(result);
+        document.writeln("<br><br>");
+        document.write("Length of array: " + result.length);
+        document.writeln("<br><br>");
+        for (i = 0; i < result.length; i++){
+            document.write(result[i] + "<br>");
+        }
+    </script>
+    <hr>
+    <h3>Display the combination of three arrays.</h3>
+    <script>
+        var arr1 = ["C", "C++", "Python"];
+        var arr2 = ["Java", "JavaScript", "Android"];
+        var arr3 = ["Ruby", "Kotline"];
+        var result = arr1.concat(arr2, arr3);
+        document.writeln(result)
+    </script>
+    <hr>
+    <h3>Testing the passed values.</h3>
+    <script>
+        document.writeln("Values 1,2,3,4 are Array: " + Array.isArray(1,2,3,4)); // Testing the passed values.
+        document.writeln("<br>")
+        document.writeln("Values [1,2,3,4] are Array: " + Array.isArray([1,2,3,4])); // Testing the passed values.
+    </script>
+    <hr>
+    <h3>JavaScript Array Reverse Method</h3>
+    <script>
+        var arr = ["AngularJS", "Node.js", "JQuery"];
+        var rev = arr.reverse(rev);
+        document.writeln(rev)
+    </script>
+    <hr>
+    <h3>JavaScript Array Sort Method</h3>
+    <script>
+        var arr = ["AngularJs", "Node.js", "JQuery", "Bootstrap"]
+        var result = arr.sort();
+        document.writeln(result);
+    </script>
+    <br><hr>
+    <script>
+        var arr = [2,4,1,8,5];
+        var result = arr.sort();
+        document.writeln(result);
+    </script>
+    <br><hr>
+    <h3>JavaScript Array Sort Example 2</h3>
+    <script>
+        var arr = [2,4,1,8,5];
+        var result = arr.sort(
+            function compare(a,b)
+            {
+                return a-b;
+            }
+        );
+        document.writeln(result)
+    </script>
+</body>
+</html>

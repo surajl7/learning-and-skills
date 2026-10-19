@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML iframes</title>
+</head>
+<body>
+    <h2>HTML iframe</h2>
+    <p>Here, "src" attribute specifies the web address (URL) of the inline frame page.</p>
+    
+    <h4>Example: iframe</h4>
+    <iframe src="https://www.google.com" ></iframe>
+
+    <h4>Example: iframe with height and width</h4>
+    <iframe src="https://www.google.com" frameborder="0" height="300" width="400"></iframe>
+
+    <h4>Example: iframe with height and width in percentage</h4>
+    <iframe src="https://www.google.com" frameborder="0" height="50%" width="70%"></iframe>
+
+    <h4>Example: iframe with hight and width in inline-css</h4>
+    <iframe src="https://www.java.com/" frameborder="0" style="height: 300px; width: 400px;"></iframe>
+
+    <h4>Example: iframe - remove the border of iframe</h4>
+    <iframe src="https://www.java.come/" frameborder="0" style="border: none;"></iframe>
+
+    <h4>Example: iframe - change the size, color, style of the iframe's border</h4>
+    <iframe src="https://www.java.com" style="border: 2px solid tomato;"></iframe>
+
+    <h4>Example: iframe - target for a link</h4>
+    <iframe src="style.css" frameborder="0" height="300px" width="100%" name="iframe_a"></iframe>
+    <p>
+        <a href="https://www.java.com" target="iframe_a"> Java.com </a>
+    </p>
+    <p>
+        The name of iframe and link target must have same value else link will not open as a frame.
+    </p>
+
+    <hr>
+
+    <h4>Example: Embed YouTube videos using iframe</h4>
+    <iframe src="https://www.youtube/embed/JHq3pL4cdy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="550" height="315" style="padding: 20px;"></iframe>
+    <iframe src="https://www.youtube/embed/O5hShUO6wxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="550" height="315" style="padding: 20px;" ></iframe>
+    <!-- Notes page no 118 -->
+</body>
+</html>

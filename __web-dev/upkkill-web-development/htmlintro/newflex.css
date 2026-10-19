@@ -1,0 +1,54 @@
+nav{
+    line-height: 26px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin: 0;
+    font-size: 1.9 cm;
+
+}
+
+.main-nav{
+    margin: 5px;
+
+}
+
+.logo a ,.main-nav a{
+    padding: 10px 15 px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.main-nav a{
+    color: #787;
+    font-size: 1.11 em;
+}
+
+nav{
+    padding: 0.5em 0;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 14px block;
+    border-radius: 15px;
+
+}
+
+@media (min-width:760px) {
+    nav, .main-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

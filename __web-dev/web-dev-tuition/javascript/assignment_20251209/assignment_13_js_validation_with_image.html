@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Validation with image</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            var name = document.f1.name.value;
+            var password = document.f1.password.value;
+            var status = false;
+            if(name.length<1){
+                document.getElementById("nameloc").innerHTML=`<img src="../../artifacts/un-checked mark.png" alt="un-checked.png"> Plese enter your name`;
+                status = false;
+            }
+            else{
+                document.getElementById("nameloc").innerHTML = `<img src="../../artifacts/checked mark.png" alt="checked.png">`;
+                status = true;
+            }
+            if(password.length<6){
+                document.getElementById("passwordloc").innerHTML=`<img src="../../artifacts/un-checked mark.png" alt="un-checked.png"> Password must be at least 6 char long`;
+                status = false;
+            }
+            else{
+                document.getElementById("passwordloc").innerHTML=`<img src="../../artifacts/checked mark.png" alt="checked.png">`;
+            }
+            return status;
+        }
+    </script>
+    <form name="f1" action="#" onsubmit="return validate()">
+        <tr>
+            <td>Enter Name: </td>
+            <td><input type="text" name="name"><span id="nameloc"></span></td>
+        </tr>
+        <br><br>
+        <tr>
+            <td>Enter Password: </td> 
+            <td><input type="password" name="password"><span id="passwordloc"></span></td>
+        </tr>
+        <br><br>
+        <tr>
+            <td colspan="2"><input type="submit" value="register"></td>
+        </tr>
+    </form>
+</body>
+</html>
