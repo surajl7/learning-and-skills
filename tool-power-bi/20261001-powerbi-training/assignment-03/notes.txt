@@ -1,0 +1,314 @@
+Below is a concrete way to finish the assignment with what you already have:
+
+Turn your existing queries into a star schema.
+Add all required calculated columns in Power Query to FactSales.
+Add the extra flags/attributes (order year/month, promotion-valid, etc.).
+I’ll keep it practical and aligned to the fields you already have.
+
+1. Star schema – which queries become which tables
+1.1 Fact table
+FactSales
+
+Use your cleaned CSV query (powerbi_hard_retail_sales with all the data-quality and business columns we built).
+Rename that query to FactSales.
+It should contain at least:
+Order ID, Order Line
+Order Date, Ship Date
+Customer ID, Product ID
+Promotion Code, Sales Rep, Warehouse
+Quantity, Unit Price, Discount %, Tax Rate, Shipping Fee
+All derived columns (Gross/Net Sales, Tax, Invoice, Shipping Days, etc.)
+Data-quality flags and composite transaction key.
+1.2 Dimension tables
+You already have these queries from the JSON:
+
+DimCustomer
+Use your Customers query as the base.
+Rename to DimCustomer.
+Keep:
+Customer ID (PK)
+Customer Name
+Email (rename to Customer Email if you want consistency)
+Segment, Region, City, Country, etc. as you like.
+Example (minimal tidy step):
+
+let
+    Source = Customers,
+    #"Selected Columns" = Table.SelectColumns(
+        Source,
+        {"Customer ID", "Customer Name", "Email", "Segment", "Region", "City", "Country"}
+    ),
+    #"Renamed Columns" = Table.RenameColumns(
+        #"Selected Columns",
+        {{"Email", "Customer Email"}}
+    ),
+    #"Distinct Customers" = Table.Distinct(#"Renamed Columns", {"Customer ID"})
+in
+    #"Distinct Customers"
+DimProduct
+Use your Products query.
+Rename to DimProduct.
+Keep:
+Product ID (PK)
+SKU, Product Name, Category, Subcategory, Brand, List Price, etc.
+Example:
+
+let
+    Source = Products,
+    #"Selected Columns" = Table.SelectColumns(
+        Source,
+        {"Product ID", "SKU", "Product Name", "Category", "Subcategory", "Brand", "List Price", "Standard Cost", "Currency"}
+    ),
+    #"Distinct Products" = Table.Distinct(#"Selected Columns", {"Product ID"})
+in
+    #"Distinct Products"
+DimPromotion
+If you already extracted Promotions from the JSON, use that query and rename to DimPromotion.
+It should have:
+Promotion Code (PK)
+Promotion Name
+Discount % (or rate)
+Start Date, End Date.
+DimSalesRep
+Create from FactSales (distinct list).
+In Power Query:
+Reference FactSales → rename to DimSalesRep.
+Remove other columns, keep Sales Rep only, then deduplicate.
+let
+    Source = FactSales,
+    #"Selected Columns" = Table.SelectColumns(Source, {"Sales Rep"}),
+    #"Distinct SalesReps" = Table.Distinct(#"Selected Columns")
+in
+    #"Distinct SalesReps"
+DimWarehouse
+Same pattern using Warehouse:
+let
+    Source = FactSales,
+    #"Selected Columns" = Table.SelectColumns(Source, {"Warehouse"}),
+    #"Distinct Warehouses" = Table.Distinct(#"Selected Columns")
+in
+    #"Distinct Warehouses"
+DimSupplier (optional)
+If supplier info is in the JSON (inside Products or separate), extract and deduplicate.
+Then relate DimSupplier[Supplier ID] to DimProduct[Supplier ID].
+Bridge table for product attributes (optional)
+If each product has a list of attributes in JSON, create:
+let
+    Source = Products_Base,   // a query where each row = product, with a column Attributes (list)
+    #"Expanded Attributes" = Table.ExpandListColumn(Source, "Attributes"),
+    #"Expanded Attribute Record" = Table.ExpandRecordColumn(
+        #"Expanded Attributes",
+        "Attributes",
+        {"attributeName", "attributeValue"},
+        {"Attribute Name", "Attribute Value"}
+    ),
+    #"Selected Columns" = Table.SelectColumns(
+        #"Expanded Attribute Record",
+        {"Product ID", "Attribute Name", "Attribute Value"}
+    )
+in
+    #"Selected Columns"
+Call this Bridge_ProductAttributes.
+
+DimDate
+Create a proper calendar (you can do this in Power Query or DAX).
+In PQ: build a table from the min/max Order Date in FactSales. For the assignment, you at least need a Date column; you can also precreate Year/Month/Quarter in DimDate.
+
+-- =========================================================================================
+
+1.3 Relationships (Model view)
+In the Model view in Power BI:
+
+DimCustomer[Customer ID] → FactSales[Customer ID] (1:*).
+DimProduct[Product ID] → FactSales[Product ID].
+DimPromotion[Promotion Code] → FactSales[Promotion Code].
+DimSalesRep[Sales Rep] → FactSales[Sales Rep].
+DimWarehouse[Warehouse] → FactSales[Warehouse].
+DimDate[Date] → FactSales[Order Date] (and optionally a second relationship for Ship Date using a role-playing technique).
+Optional:
+DimSupplier[Supplier ID] → DimProduct[Supplier ID].
+Bridge_ProductAttributes[Product ID] → DimProduct[Product ID].
+Use single direction, one-to-many from dimension to fact.
+
+2. Required calculated columns in Power Query (FactSales)
+In your FactSales query, after you have:
+
+Quantity (number),
+Unit Price (number),
+Discount % (number, e.g. 10 = 10%),
+Tax Rate (number, e.g. 5 = 5%),
+Shipping Fee (number),
+Order Date, Ship Date (date),
+add these steps (you already have most of them; this is the clean, minimal version).
+
+Replace PreviousStep with your last step name.
+
+// 1. Discount Rate (as decimal)
+#"Added Discount Rate" = Table.AddColumn(
+    PreviousStep,
+    "Discount Rate",
+    each if [Discount %] = null then null else [Discount %] / 100,
+    type number
+),
+
+// 2. Tax Rate (as decimal)
+#"Added Tax Rate Decimal" = Table.AddColumn(
+    #"Added Discount Rate",
+    "Tax Rate Decimal",
+    each if [Tax Rate] = null then null else [Tax Rate] / 100,
+    type number
+),
+
+// 3. Gross Sales = Quantity × Unit Price
+#"Added Gross Sales" = Table.AddColumn(
+    #"Added Tax Rate Decimal",
+    "Gross Sales",
+    each if [Quantity] = null or [Unit Price] = null then null else [Quantity] * [Unit Price],
+    type number
+),
+
+// 4. Discount Amount = Gross Sales × Discount Rate
+#"Added Discount Amount" = Table.AddColumn(
+    #"Added Gross Sales",
+    "Discount Amount",
+    each if [Gross Sales] = null or [Discount Rate] = null then null else [Gross Sales] * [Discount Rate],
+    type number
+),
+
+// 5. Net Sales = Gross Sales − Discount Amount
+#"Added Net Sales" = Table.AddColumn(
+    #"Added Discount Amount",
+    "Net Sales",
+    each if [Gross Sales] = null then null else [Gross Sales] - (if [Discount Amount] = null then 0 else [Discount Amount]),
+    type number
+),
+
+// 6. Tax Amount = Net Sales × Tax Rate
+#"Added Tax Amount" = Table.AddColumn(
+    #"Added Net Sales",
+    "Tax Amount",
+    each if [Net Sales] = null or [Tax Rate Decimal] = null then null else [Net Sales] * [Tax Rate Decimal],
+    type number
+),
+
+// 7. Invoice Amount = Net Sales + Tax Amount + Shipping Fee
+#"Added Invoice Amount" = Table.AddColumn(
+    #"Added Tax Amount",
+    "Invoice Amount",
+    each 
+        if [Net Sales] = null then null 
+        else [Net Sales]
+             + (if [Tax Amount] = null then 0 else [Tax Amount])
+             + (if [Shipping Fee] = null then 0 else [Shipping Fee]),
+    type number
+),
+
+// 8. Shipping Days = Ship Date − Order Date
+#"Added Shipping Days" = Table.AddColumn(
+    #"Added Invoice Amount",
+    "Shipping Days",
+    each 
+        if [Ship Date] = null or [Order Date] = null then null
+        else Duration.Days([Ship Date] - [Order Date]),
+    Int64.Type
+)
+3. Additional columns in FactSales
+3.1 Order year, month, year-month, financial quarter
+Add these after the Shipping Days step:
+
+// Order Year
+#"Added Order Year" = Table.AddColumn(
+    #"Added Shipping Days",
+    "Order Year",
+    each if [Order Date] = null then null else Date.Year([Order Date]),
+    Int64.Type
+),
+
+// Order Month (numeric)
+#"Added Order Month" = Table.AddColumn(
+    #"Added Order Year",
+    "Order Month",
+    each if [Order Date] = null then null else Date.Month([Order Date]),
+    Int64.Type
+),
+
+// Year-Month (text like 2024-10)
+#"Added YearMonth" = Table.AddColumn(
+    #"Added Order Month",
+    "Year-month",
+    each if [Order Date] = null then null else Date.ToText([Order Date], "yyyy-MM"),
+    type text
+),
+
+// Financial quarter (assume same as calendar quarter)
+#"Added Financial Quarter" = Table.AddColumn(
+    #"Added YearMonth",
+    "Financial quarter",
+    each if [Order Date] = null then null else "Q" & Number.ToText(Date.QuarterOfYear([Order Date])),
+    type text
+)
+If your financial year starts in a different month, this can be adjusted, but for the assignment calendar quarters are usually acceptable.
+
+3.2 Promotion-valid flag
+To be fully correct, you should compare Order Date to DimPromotion[Start Date] and [End Date].
+
+Simplest approach in Power Query:
+
+Merge FactSales with DimPromotion on Promotion Code to bring Start Date and End Date into FactSales (or keep this as a separate step/query).
+Then:
+#"Added Promotion Valid Flag" = Table.AddColumn(
+    PreviousStep,
+    "Promotion-valid flag",
+    each 
+        if [Promotion Code] = null or [Promotion Code] = "" then "No promotion"
+        else if [Order Date] = null or [Start Date] = null or [End Date] = null then "Unknown"
+        else if [Order Date] >= [Start Date] and [Order Date] <= [End Date] then "Valid"
+        else "Not valid",
+    type text
+)
+If you don’t want to merge, you can keep a simple placeholder version for the assignment: “Has promotion” vs “No promotion”.
+
+3.3 Late-shipment flag
+Define your business rule. Common for training: late if Shipping Days > 5.
+
+#"Added Late Shipment Flag" = Table.AddColumn(
+    PreviousStep,
+    "Late-shipment flag",
+    each 
+        if [Shipping Days] = null then "Unknown"
+        else if [Shipping Days] > 5 then "Late"
+        else "On time",
+    type text
+)
+3.4 Data-quality status
+You already have multiple *Status columns (Order Date Status, Ship Date Status, Quantity Status, Product ID Status, etc.). Combine them into a single summarised status:
+
+#"Added Data-quality Status" = Table.AddColumn(
+    PreviousStep,
+    "Data-quality status",
+    each 
+        if [Order Date Status] <> "Valid" or [Ship Date Status] <> "Valid" then "Date issue"
+        else if [Quantity Status] <> "Valid" then "Quantity issue"
+        else if [Product ID Status] <> "Present" then "Missing product"
+        else if [Duplicate OrderLine Status] = "Duplicate" then "Duplicate order line"
+        else if [Exact Duplicate Status] = "Exact Duplicate" then "Exact duplicate"
+        else "OK",
+    type text
+)
+You can adjust the priority/order of checks to match your preference.
+
+3.5 Composite transaction key
+You already have this pattern, but for completeness:
+
+#"Added Composite Transaction Key" = Table.AddColumn(
+    PreviousStep,
+    "Composite transaction key",
+    each Text.From([Order ID]) & "-" & Text.From([Order Line]),
+    type text
+)
+This should be the last step you add in the FactSales query.
+
+If you paste your current last few steps from FactSales, I can show you exactly where to splice this block in so the step names match and you don’t get “step not found” errors.
+
+
+

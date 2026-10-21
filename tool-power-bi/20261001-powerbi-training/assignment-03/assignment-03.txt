@@ -1,0 +1,77 @@
+assignment-03
+ 
+Connect and profile
+    - Import both the CSV and JSON files into Power BI.
+    - Do not edit the source files manually.
+    - Use Power Query data profiling to identify:
+        - Errors
+        - Empty values
+        - Distinct and unique values
+        - Candidate keys
+        - Duplicate records
+        - Invalid data types
+
+
+
+Clean the CSV with Power Query
+    - Standardize column names.
+    - Trim and clean text columns.
+    - Standardize Region, Category, Payment Method, and Order Status.
+    - Convert all order dates and ship dates into proper dates.
+    - Handle invalid dates without deleting valid records unnecessarily.
+    - Convert Quantity, Unit Price, Discount %, Tax Rate, and Shipping Fee into numeric columns.
+
+
+Identify and appropriately handle:
+    - Invalid quantities
+    - Missing product IDs
+    - Exact duplicates
+    - Duplicate Order ID and Order Line combinations
+    - Create data-quality indicator columns before filtering or correcting questionable records.
+
+
+
+Transform the JSON
+Create separate queries from the JSON for:
+    - Customers
+    - Products
+    - Promotions
+    - Exchange rates
+    - Suppliers
+    - Product attributes
+
+
+
+Create a star schema
+Expected model:
+    - FactSales
+    - DimCustomer
+    - DimProduct
+    - DimDate
+    - DimPromotion
+    - DimSalesRep
+    - DimWarehouse
+    - Optional DimSupplier
+    - Optional bridge table for product attributes
+
+
+
+Required calculated columns in Power Query
+    - Gross Sales = Quantity × Unit Price
+    - Discount Amount = Gross Sales × Discount Rate
+    - Net Sales = Gross Sales − Discount Amount
+    - Tax Amount = Net Sales × Tax Rate
+    - Invoice Amount = Net Sales + Tax Amount + Shipping Fee
+    - Shipping Days = Ship Date − Order Date
+
+
+
+Also create
+    - Order year
+    - Order month
+    - Year-month
+    - Financial quarter
+    - Promotion-valid flag
+    - Late-shipment flag
+    - Data-quality status
+    - Composite transaction key

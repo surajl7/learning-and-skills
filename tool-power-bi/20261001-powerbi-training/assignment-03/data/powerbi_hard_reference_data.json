@@ -1,0 +1,4835 @@
+{
+  "metadata": {
+    "dataset": "Retail Reference Master",
+    "version": "2026.10",
+    "generatedFor": "Power BI hard assignment",
+    "baseCurrency": "INR"
+  },
+  "customers": [
+    {
+      "CustomerID": "C0001",
+      "CustomerName": "Aadhya Rao",
+      "Email": "aadhya.rao1@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2023-01-14",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "790956"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi",
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0002",
+      "CustomerName": "Arjun Rao",
+      "Email": "arjun.rao2@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-09-30",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "707223"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0003",
+      "CustomerName": "Vivaan Gupta",
+      "Email": "vivaan.gupta3@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-12-23",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "364350"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0004",
+      "CustomerName": "Aadhya Mehta",
+      "Email": "aadhya.mehta4@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-08-28",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "451518"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0005",
+      "CustomerName": "Arjun Reddy",
+      "Email": "arjun.reddy5@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-07-08",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "474743"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0006",
+      "CustomerName": "Ayaan Mehta",
+      "Email": "ayaan.mehta6@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2025-03-25",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "389544"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0007",
+      "CustomerName": "Sara Joshi",
+      "Email": "sara.joshi7@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-03-19",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "132306"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0008",
+      "CustomerName": "Vihaan Gupta",
+      "Email": "vihaan.gupta8@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2023-12-08",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "210567"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "English",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0009",
+      "CustomerName": "Kavya Verma",
+      "Email": "kavya.verma9@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2022-02-13",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "250875"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0010",
+      "CustomerName": "Diya Singh",
+      "Email": "diya.singh10@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-06-17",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "750164"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0011",
+      "CustomerName": "Kavya Nair",
+      "Email": "kavya.nair11@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-10-02",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "766529"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0012",
+      "CustomerName": "Vivaan Reddy",
+      "Email": "vivaan.reddy12@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-01-27",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "314397"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali",
+          "Hindi",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0013",
+      "CustomerName": "Aditya Patel",
+      "Email": "aditya.patel13@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2025-06-08",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "478894"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0014",
+      "CustomerName": "Sai Mishra",
+      "Email": "sai.mishra14@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-12-23",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "402737"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0015",
+      "CustomerName": "Ishaan Singh",
+      "Email": "ishaan.singh15@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-04-28",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "311024"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0016",
+      "CustomerName": "Diya Patel",
+      "Email": "diya.patel16@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2024-05-07",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "391548"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Hindi",
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0017",
+      "CustomerName": "Vihaan Sharma",
+      "Email": "vihaan.sharma17@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2022-03-10",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "225442"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "English",
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0018",
+      "CustomerName": "Krishna Reddy",
+      "Email": "krishna.reddy18@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2022-07-30",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "116227"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali",
+          "Tamil",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0019",
+      "CustomerName": "Vihaan Sharma",
+      "Email": "vihaan.sharma19@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-09-19",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "696597"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu",
+          "Bengali",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0020",
+      "CustomerName": "Kavya Das",
+      "Email": "kavya.das20@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-09-08",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "474386"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0021",
+      "CustomerName": "Vivaan Patel",
+      "Email": "vivaan.patel21@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-10-06",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "218224"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0022",
+      "CustomerName": "Aarav Khan",
+      "Email": "aarav.khan22@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-08-22",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "709550"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0023",
+      "CustomerName": "Sara Sharma",
+      "Email": "sara.sharma23@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-01-07",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "374138"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0024",
+      "CustomerName": "Ira Reddy",
+      "Email": "ira.reddy24@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2025-03-22",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "535298"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0025",
+      "CustomerName": "Aditya Mehta",
+      "Email": "aditya.mehta25@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2023-06-20",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "517245"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0026",
+      "CustomerName": "Aditya Nair",
+      "Email": "aditya.nair26@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-05-23",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "512214"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0027",
+      "CustomerName": "Diya Joshi",
+      "Email": "diya.joshi27@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-01-14",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "148756"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0028",
+      "CustomerName": "Aditya Rao",
+      "Email": "aditya.rao28@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2023-04-14",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "688593"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0029",
+      "CustomerName": "Sai Iyer",
+      "Email": "sai.iyer29@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-09-17",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "559106"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0030",
+      "CustomerName": "Vivaan Joshi",
+      "Email": "vivaan.joshi30@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-01-05",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "596871"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0031",
+      "CustomerName": "Aditya Sharma",
+      "Email": "aditya.sharma31@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2024-01-06",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "349312"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0032",
+      "CustomerName": "Myra Patel",
+      "Email": "myra.patel32@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2025-04-15",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "182124"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0033",
+      "CustomerName": "Aadhya Verma",
+      "Email": "aadhya.verma33@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-04-02",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "553096"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Telugu",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0034",
+      "CustomerName": "Reyansh Nair",
+      "Email": "reyansh.nair34@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-07-04",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "786343"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0035",
+      "CustomerName": "Sara Das",
+      "Email": "sara.das35@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-06-20",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "464258"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi",
+          "Marathi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0036",
+      "CustomerName": "Riya Joshi",
+      "Email": "riya.joshi36@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-12-09",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "180517"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0037",
+      "CustomerName": "Sai Das",
+      "Email": "sai.das37@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2023-01-17",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "681279"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0038",
+      "CustomerName": "Aarav Joshi",
+      "Email": "aarav.joshi38@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-12-16",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "235479"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0039",
+      "CustomerName": "Ayaan Iyer",
+      "Email": "ayaan.iyer39@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-12-25",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "793192"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0040",
+      "CustomerName": "Ira Rao",
+      "Email": "ira.rao40@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2024-04-13",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "255607"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0041",
+      "CustomerName": "Diya Gupta",
+      "Email": "diya.gupta41@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-06-13",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "292115"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0042",
+      "CustomerName": "Sai Khan",
+      "Email": "sai.khan42@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-10-09",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "230883"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0043",
+      "CustomerName": "Aadhya Kulkarni",
+      "Email": "aadhya.kulkarni43@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2022-01-26",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "478712"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0044",
+      "CustomerName": "Navya Patel",
+      "Email": "navya.patel44@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-05-14",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "311585"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0045",
+      "CustomerName": "Myra Nair",
+      "Email": "myra.nair45@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-06-28",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "612232"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0046",
+      "CustomerName": "Aarav Joshi",
+      "Email": "aarav.joshi46@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2022-09-03",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "164110"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "English",
+          "Bengali",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0047",
+      "CustomerName": "Diya Gupta",
+      "Email": "diya.gupta47@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-04-03",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "344943"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "English",
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0048",
+      "CustomerName": "Ananya Iyer",
+      "Email": "ananya.iyer48@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2025-01-24",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "213232"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0049",
+      "CustomerName": "Meera Nair",
+      "Email": "meera.nair49@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2024-07-01",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "171209"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0050",
+      "CustomerName": "Kavya Patel",
+      "Email": "kavya.patel50@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-11-16",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "213851"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi",
+          "Tamil",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0051",
+      "CustomerName": "Ira Sharma",
+      "Email": "ira.sharma51@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-09-14",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "185505"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0052",
+      "CustomerName": "Reyansh Iyer",
+      "Email": "reyansh.iyer52@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2024-11-01",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "326065"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0053",
+      "CustomerName": "Aditya Reddy",
+      "Email": "aditya.reddy53@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-11-04",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "604197"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0054",
+      "CustomerName": "Ishaan Verma",
+      "Email": "ishaan.verma54@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2022-05-23",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "122606"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0055",
+      "CustomerName": "Aarav Nair",
+      "Email": "aarav.nair55@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2025-05-30",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "788823"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0056",
+      "CustomerName": "Ananya Mishra",
+      "Email": "ananya.mishra56@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-02-25",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "602311"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0057",
+      "CustomerName": "Aarav Kulkarni",
+      "Email": "aarav.kulkarni57@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-05-20",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "723415"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Hindi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0058",
+      "CustomerName": "Kavya Kulkarni",
+      "Email": "kavya.kulkarni58@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2023-10-07",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "323675"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0059",
+      "CustomerName": "Vivaan Verma",
+      "Email": "vivaan.verma59@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2022-09-15",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "167264"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0060",
+      "CustomerName": "Ayaan Sharma",
+      "Email": "ayaan.sharma60@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2023-09-05",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "292157"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0061",
+      "CustomerName": "Meera Patel",
+      "Email": "meera.patel61@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2025-03-28",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "250468"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0062",
+      "CustomerName": "Ira Rao",
+      "Email": "ira.rao62@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2022-04-01",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "746373"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0063",
+      "CustomerName": "Ishaan Kulkarni",
+      "Email": "ishaan.kulkarni63@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2024-12-15",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "224883"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "Bengali",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0064",
+      "CustomerName": "Ishaan Joshi",
+      "Email": "ishaan.joshi64@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2025-04-06",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "494809"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0065",
+      "CustomerName": "Kavya Patel",
+      "Email": "kavya.patel65@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2023-09-30",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "435252"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0066",
+      "CustomerName": "Kavya Kulkarni",
+      "Email": "kavya.kulkarni66@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-12-01",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "453574"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0067",
+      "CustomerName": "Sara Mishra",
+      "Email": "sara.mishra67@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2022-08-20",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "302168"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "English",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0068",
+      "CustomerName": "Aadhya Khan",
+      "Email": "aadhya.khan68@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2022-08-06",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "627358"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0069",
+      "CustomerName": "Aadhya Reddy",
+      "Email": "aadhya.reddy69@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2024-09-19",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "445670"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi",
+          "English",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0070",
+      "CustomerName": "Aditya Sharma",
+      "Email": "aditya.sharma70@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2025-07-15",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "606114"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0071",
+      "CustomerName": "Ayaan Singh",
+      "Email": "ayaan.singh71@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-12-17",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "385630"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Hindi",
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0072",
+      "CustomerName": "Arjun Mishra",
+      "Email": "arjun.mishra72@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2023-07-03",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "620247"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0073",
+      "CustomerName": "Ira Khan",
+      "Email": "ira.khan73@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2022-01-08",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "709187"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0074",
+      "CustomerName": "Vivaan Patel",
+      "Email": "vivaan.patel74@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2025-01-08",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "373278"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0075",
+      "CustomerName": "Sai Mishra",
+      "Email": "sai.mishra75@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-05-07",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "587882"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "English",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0076",
+      "CustomerName": "Ananya Reddy",
+      "Email": "ananya.reddy76@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2022-04-14",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "724558"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0077",
+      "CustomerName": "Kavya Kulkarni",
+      "Email": "kavya.kulkarni77@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2023-02-01",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "249183"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0078",
+      "CustomerName": "Ayaan Mishra",
+      "Email": "ayaan.mishra78@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2022-09-19",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "252913"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil",
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0079",
+      "CustomerName": "Aditya Mehta",
+      "Email": "aditya.mehta79@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2024-12-17",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "204760"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "English",
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0080",
+      "CustomerName": "Aarav Kulkarni",
+      "Email": "aarav.kulkarni80@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2024-08-17",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "411146"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "English",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0081",
+      "CustomerName": "Aadhya Khan",
+      "Email": "aadhya.khan81@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-01-06",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "634223"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "English",
+          "Marathi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0082",
+      "CustomerName": "Diya Kulkarni",
+      "Email": "diya.kulkarni82@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-08-03",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "594582"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali",
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0083",
+      "CustomerName": "Vihaan Kulkarni",
+      "Email": "vihaan.kulkarni83@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2022-06-13",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "528215"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0084",
+      "CustomerName": "Meera Das",
+      "Email": "meera.das84@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2024-09-03",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "234574"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali",
+          "Hindi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0085",
+      "CustomerName": "Diya Rao",
+      "Email": "diya.rao85@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2022-06-30",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "223393"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "English",
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0086",
+      "CustomerName": "Vivaan Nair",
+      "Email": "vivaan.nair86@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2022-08-21",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "144919"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0087",
+      "CustomerName": "Arjun Singh",
+      "Email": "arjun.singh87@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-03-21",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "643882"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0088",
+      "CustomerName": "Meera Gupta",
+      "Email": "meera.gupta88@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-04-16",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "244431"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0089",
+      "CustomerName": "Ayaan Mishra",
+      "Email": "ayaan.mishra89@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2023-04-25",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "550550"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "English",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0090",
+      "CustomerName": "Vivaan Mishra",
+      "Email": "vivaan.mishra90@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2024-09-27",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "477954"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "English",
+          "Hindi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0091",
+      "CustomerName": "Krishna Gupta",
+      "Email": "krishna.gupta91@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-02-06",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "601453"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0092",
+      "CustomerName": "Myra Joshi",
+      "Email": "myra.joshi92@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-10-12",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "561381"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "Hindi",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0093",
+      "CustomerName": "Vivaan Reddy",
+      "Email": "vivaan.reddy93@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2023-09-30",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "721199"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0094",
+      "CustomerName": "Riya Singh",
+      "Email": "riya.singh94@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-12-26",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "692662"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0095",
+      "CustomerName": "Diya Reddy",
+      "Email": "diya.reddy95@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2023-06-24",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "540719"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0096",
+      "CustomerName": "Vihaan Khan",
+      "Email": "vihaan.khan96@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2022-08-15",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "332492"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "English",
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0097",
+      "CustomerName": "Aditya Reddy",
+      "Email": "aditya.reddy97@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2024-02-16",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "355791"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0098",
+      "CustomerName": "Aadhya Das",
+      "Email": "aadhya.das98@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2025-07-16",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "411522"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0099",
+      "CustomerName": "Aditya Das",
+      "Email": "aditya.das99@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-04-12",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "510903"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0100",
+      "CustomerName": "Aadhya Reddy",
+      "Email": "aadhya.reddy100@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2025-06-04",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "544041"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0101",
+      "CustomerName": "Arjun Khan",
+      "Email": "arjun.khan101@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2024-11-12",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "675880"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil",
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0102",
+      "CustomerName": "Navya Verma",
+      "Email": "navya.verma102@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-05-19",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "276537"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0103",
+      "CustomerName": "Kavya Mehta",
+      "Email": "kavya.mehta103@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2023-01-11",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "535643"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0104",
+      "CustomerName": "Ishaan Nair",
+      "Email": "ishaan.nair104@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-09-04",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "139066"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0105",
+      "CustomerName": "Ananya Sharma",
+      "Email": "ananya.sharma105@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-07-17",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "469777"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0106",
+      "CustomerName": "Ishaan Singh",
+      "Email": "ishaan.singh106@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-03-12",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "144739"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Bengali",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0107",
+      "CustomerName": "Arjun Kulkarni",
+      "Email": "arjun.kulkarni107@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-11-06",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "471050"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0108",
+      "CustomerName": "Ayaan Verma",
+      "Email": "ayaan.verma108@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2024-09-20",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "416058"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0109",
+      "CustomerName": "Ananya Iyer",
+      "Email": "ananya.iyer109@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-01-18",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "721869"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0110",
+      "CustomerName": "Krishna Iyer",
+      "Email": "krishna.iyer110@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2025-05-18",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "185757"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Marathi",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0111",
+      "CustomerName": "Navya Das",
+      "Email": "navya.das111@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-03-27",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "569174"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0112",
+      "CustomerName": "Sara Kulkarni",
+      "Email": "sara.kulkarni112@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2025-01-28",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "610287"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0113",
+      "CustomerName": "Kavya Nair",
+      "Email": "kavya.nair113@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2022-10-21",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "508349"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0114",
+      "CustomerName": "Navya Verma",
+      "Email": "navya.verma114@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2025-01-21",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "182542"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0115",
+      "CustomerName": "Aadhya Khan",
+      "Email": "aadhya.khan115@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2022-07-25",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "222865"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0116",
+      "CustomerName": "Meera Gupta",
+      "Email": "meera.gupta116@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2023-05-17",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "519163"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "English",
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0117",
+      "CustomerName": "Kavya Gupta",
+      "Email": "kavya.gupta117@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-09-12",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "219159"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0118",
+      "CustomerName": "Krishna Iyer",
+      "Email": "krishna.iyer118@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-12-09",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "166907"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0119",
+      "CustomerName": "Arjun Nair",
+      "Email": "arjun.nair119@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2024-04-14",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "692742"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "English",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0120",
+      "CustomerName": "Aditya Iyer",
+      "Email": "aditya.iyer120@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2024-10-28",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "741407"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": true,
+        "Languages": [
+          "Tamil",
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0121",
+      "CustomerName": "Aditya Das",
+      "Email": "aditya.das121@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-01-27",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "327291"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0122",
+      "CustomerName": "Sai Das",
+      "Email": "sai.das122@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2023-09-09",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "731922"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0123",
+      "CustomerName": "Vihaan Verma",
+      "Email": "vihaan.verma123@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2025-05-01",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "475961"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0124",
+      "CustomerName": "Reyansh Das",
+      "Email": "reyansh.das124@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-03-22",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "372672"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0125",
+      "CustomerName": "Kavya Iyer",
+      "Email": "kavya.iyer125@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2022-08-25",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "278655"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0126",
+      "CustomerName": "Reyansh Das",
+      "Email": "reyansh.das126@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2023-10-28",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "762407"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "English",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0127",
+      "CustomerName": "Ira Mishra",
+      "Email": "ira.mishra127@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2024-05-16",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "720782"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0128",
+      "CustomerName": "Ira Rao",
+      "Email": "ira.rao128@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-09-22",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "619056"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi",
+          "Tamil",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0129",
+      "CustomerName": "Sara Singh",
+      "Email": "sara.singh129@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-10-24",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "784439"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0130",
+      "CustomerName": "Ananya Khan",
+      "Email": "ananya.khan130@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-06-26",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "173177"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0131",
+      "CustomerName": "Aditya Rao",
+      "Email": "aditya.rao131@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2023-07-10",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "254517"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0132",
+      "CustomerName": "Navya Mishra",
+      "Email": "navya.mishra132@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2024-10-19",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "597965"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0133",
+      "CustomerName": "Riya Mehta",
+      "Email": "riya.mehta133@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2023-09-18",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "531931"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0134",
+      "CustomerName": "Ananya Mehta",
+      "Email": "ananya.mehta134@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2022-01-24",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "425211"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0135",
+      "CustomerName": "Riya Joshi",
+      "Email": "riya.joshi135@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2025-05-15",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "747981"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0136",
+      "CustomerName": "Sara Reddy",
+      "Email": "sara.reddy136@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2022-11-15",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "138528"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0137",
+      "CustomerName": "Ayaan Mishra",
+      "Email": "ayaan.mishra137@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2025-01-31",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "502125"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Marathi",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0138",
+      "CustomerName": "Arjun Verma",
+      "Email": "arjun.verma138@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2025-04-22",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "466428"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0139",
+      "CustomerName": "Sara Verma",
+      "Email": "sara.verma139@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-12-06",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "771419"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0140",
+      "CustomerName": "Kavya Kulkarni",
+      "Email": "kavya.kulkarni140@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2022-07-21",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "745749"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0141",
+      "CustomerName": "Sai Nair",
+      "Email": "sai.nair141@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2022-03-05",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "453403"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0142",
+      "CustomerName": "Vivaan Reddy",
+      "Email": "vivaan.reddy142@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2022-05-08",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "444246"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0143",
+      "CustomerName": "Aditya Patel",
+      "Email": "aditya.patel143@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2023-10-27",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "375751"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "Bengali",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0144",
+      "CustomerName": "Sara Patel",
+      "Email": "sara.patel144@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2022-10-17",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Surat",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "496405"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi",
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0145",
+      "CustomerName": "Krishna Reddy",
+      "Email": "krishna.reddy145@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2024-03-18",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "441184"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0146",
+      "CustomerName": "Meera Reddy",
+      "Email": "meera.reddy146@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-05-23",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "516243"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0147",
+      "CustomerName": "Ananya Mehta",
+      "Email": "ananya.mehta147@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2024-12-13",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "190681"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": true,
+        "Languages": [
+          "Bengali",
+          "Tamil",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0148",
+      "CustomerName": "Navya Rao",
+      "Email": "navya.rao148@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2025-01-28",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Ahmedabad",
+        "StateCode": "GJ",
+        "Country": "India",
+        "PostalCode": "576951"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0149",
+      "CustomerName": "Arjun Joshi",
+      "Email": "arjun.joshi149@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-08-26",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "499462"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": true,
+        "Languages": [
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0150",
+      "CustomerName": "Sai Verma",
+      "Email": "sai.verma150@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2025-04-07",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "432584"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0151",
+      "CustomerName": "Ayaan Joshi",
+      "Email": "ayaan.joshi151@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2024-08-04",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Noida",
+        "StateCode": "UP",
+        "Country": "India",
+        "PostalCode": "326526"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0152",
+      "CustomerName": "Riya Iyer",
+      "Email": "riya.iyer152@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2022-10-23",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Patna",
+        "StateCode": "BR",
+        "Country": "India",
+        "PostalCode": "260102"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0153",
+      "CustomerName": "Myra Verma",
+      "Email": "myra.verma153@example.com",
+      "Segment": "Corporate",
+      "Region": "East",
+      "JoinDate": "2024-09-09",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "120638"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0154",
+      "CustomerName": "Sai Mehta",
+      "Email": "sai.mehta154@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2024-02-04",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "609005"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0155",
+      "CustomerName": "Arjun Khan",
+      "Email": "arjun.khan155@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-09-16",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "361458"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0156",
+      "CustomerName": "Sara Joshi",
+      "Email": "sara.joshi156@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2023-05-19",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "736371"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0157",
+      "CustomerName": "Diya Gupta",
+      "Email": "diya.gupta157@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2025-03-09",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "138041"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0158",
+      "CustomerName": "Myra Singh",
+      "Email": "myra.singh158@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-02-01",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "244470"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0159",
+      "CustomerName": "Diya Das",
+      "Email": "diya.das159@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-05-27",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "526838"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0160",
+      "CustomerName": "Kavya Sharma",
+      "Email": "kavya.sharma160@example.com",
+      "Segment": "Small Business",
+      "Region": "North",
+      "JoinDate": "2023-12-15",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "405000"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0161",
+      "CustomerName": "Ayaan Das",
+      "Email": "ayaan.das161@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2024-04-15",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "187250"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Hindi",
+          "Telugu",
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0162",
+      "CustomerName": "Navya Singh",
+      "Email": "navya.singh162@example.com",
+      "Segment": "Corporate",
+      "Region": "West",
+      "JoinDate": "2023-04-19",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "487921"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "N",
+        "Languages": [
+          "English",
+          "Hindi",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0163",
+      "CustomerName": "Arjun Das",
+      "Email": "arjun.das163@example.com",
+      "Segment": "Small Business",
+      "Region": "West",
+      "JoinDate": "2023-04-28",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Mumbai",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "156734"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0164",
+      "CustomerName": "Aadhya Mehta",
+      "Email": "aadhya.mehta164@example.com",
+      "Segment": "Corporate",
+      "Region": "South",
+      "JoinDate": "2023-07-20",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Hyderabad",
+        "StateCode": "TS",
+        "Country": "India",
+        "PostalCode": "150613"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Telugu",
+          "Marathi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0165",
+      "CustomerName": "Ayaan Sharma",
+      "Email": "ayaan.sharma165@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2024-01-11",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "591170"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0166",
+      "CustomerName": "Ira Sharma",
+      "Email": "ira.sharma166@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-04-12",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "457111"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0167",
+      "CustomerName": "Vivaan Sharma",
+      "Email": "vivaan.sharma167@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2024-08-17",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "284968"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0168",
+      "CustomerName": "Aadhya Khan",
+      "Email": "aadhya.khan168@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2024-12-26",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "584762"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": true,
+        "Languages": [
+          "Telugu",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0169",
+      "CustomerName": "Ananya Joshi",
+      "Email": "ananya.joshi169@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2025-07-08",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Delhi",
+        "StateCode": "DL",
+        "Country": "India",
+        "PostalCode": "477209"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Hindi",
+          "Tamil",
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0170",
+      "CustomerName": "Ananya Mehta",
+      "Email": "ananya.mehta170@example.com",
+      "Segment": "Consumer",
+      "Region": "West",
+      "JoinDate": "2022-03-12",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Pune",
+        "StateCode": "MH",
+        "Country": "India",
+        "PostalCode": "552188"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu",
+          "English",
+          "Bengali"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0171",
+      "CustomerName": "Ayaan Iyer",
+      "Email": "ayaan.iyer171@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2022-01-12",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "282487"
+      },
+      "Preferences": {
+        "PreferredChannel": "Online",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0172",
+      "CustomerName": "Riya Rao",
+      "Email": "riya.rao172@example.com",
+      "Segment": "Consumer",
+      "Region": "East",
+      "JoinDate": "2024-03-05",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Kolkata",
+        "StateCode": "WB",
+        "Country": "India",
+        "PostalCode": "710277"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Tamil",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0173",
+      "CustomerName": "Aditya Singh",
+      "Email": "aditya.singh173@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2023-10-02",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "570797"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": "N",
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0174",
+      "CustomerName": "Krishna Gupta",
+      "Email": "krishna.gupta174@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2023-05-18",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Guwahati",
+        "StateCode": "AS",
+        "Country": "India",
+        "PostalCode": "133472"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Tamil",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0175",
+      "CustomerName": "Myra Mehta",
+      "Email": "myra.mehta175@example.com",
+      "Segment": "Consumer",
+      "Region": "South",
+      "JoinDate": "2022-04-15",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Bengaluru",
+        "StateCode": "KA",
+        "Country": "India",
+        "PostalCode": "391547"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0176",
+      "CustomerName": "Aadhya Kulkarni",
+      "Email": "aadhya.kulkarni176@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2022-04-24",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "789876"
+      },
+      "Preferences": {
+        "PreferredChannel": "Marketplace",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0177",
+      "CustomerName": "Arjun Joshi",
+      "Email": "arjun.joshi177@example.com",
+      "Segment": "Small Business",
+      "Region": "East",
+      "JoinDate": "2023-08-19",
+      "LoyaltyTier": "Bronze",
+      "Address": {
+        "City": "Bhubaneswar",
+        "StateCode": "OD",
+        "Country": "India",
+        "PostalCode": "132353"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Tamil",
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0178",
+      "CustomerName": "Ayaan Gupta",
+      "Email": "ayaan.gupta178@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2024-12-30",
+      "LoyaltyTier": "Silver",
+      "Address": {
+        "City": "Kochi",
+        "StateCode": "KL",
+        "Country": "India",
+        "PostalCode": "295351"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "N",
+        "Languages": [
+          "Marathi",
+          "English",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0179",
+      "CustomerName": "Meera Verma",
+      "Email": "meera.verma179@example.com",
+      "Segment": "Small Business",
+      "Region": "South",
+      "JoinDate": "2025-06-16",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Chennai",
+        "StateCode": "TN",
+        "Country": "India",
+        "PostalCode": "758722"
+      },
+      "Preferences": {
+        "PreferredChannel": "Retail Store",
+        "OptInEmail": "Y",
+        "Languages": [
+          "Marathi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0180",
+      "CustomerName": "Sara Gupta",
+      "Email": "sara.gupta180@example.com",
+      "Segment": "Consumer",
+      "Region": "North",
+      "JoinDate": "2023-06-20",
+      "LoyaltyTier": "Gold",
+      "Address": {
+        "City": "Jaipur",
+        "StateCode": "RJ",
+        "Country": "India",
+        "PostalCode": "748684"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Telugu",
+          "Hindi",
+          "English"
+        ]
+      }
+    },
+    {
+      "CustomerID": "C0005",
+      "CustomerName": "Arjun Reddy",
+      "Email": "arjun.reddy5@example.com",
+      "Segment": "Corporate",
+      "Region": "North",
+      "JoinDate": "2025-07-08",
+      "LoyaltyTier": "Platinum",
+      "Address": {
+        "City": "Gurugram",
+        "StateCode": "HR",
+        "Country": "India",
+        "PostalCode": "474743"
+      },
+      "Preferences": {
+        "PreferredChannel": "Partner",
+        "OptInEmail": false,
+        "Languages": [
+          "Bengali"
+        ]
+      }
+    }
+  ],
+  "products": [
+    {
+      "ProductID": "P001",
+      "SKU": "EL-LAP-14",
+      "ProductName": "Aster 14 Laptop",
+      "Category": "Electronics",
+      "Subcategory": "Laptop",
+      "ListPrice": 65999,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 65999,
+        "StandardCost": 47972.86,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S07",
+        "SupplierName": "Apex Supply Co"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": "12 months"
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P002",
+      "SKU": "EL-MON-27",
+      "ProductName": "Nimbus 27 Monitor",
+      "Category": "Electronics",
+      "Subcategory": "Monitor",
+      "ListPrice": 18999,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 18999,
+        "StandardCost": 11377.95,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S06",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": "12 months"
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P003",
+      "SKU": "EL-HDP-01",
+      "ProductName": "Pulse Headphones",
+      "Category": "Electronics",
+      "Subcategory": "Headphones",
+      "ListPrice": 4999,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 4999,
+        "StandardCost": 3506.24,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S01",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P004",
+      "SKU": "EL-KBD-02",
+      "ProductName": "Orbit Keyboard",
+      "Category": "Electronics",
+      "Subcategory": "Keyboard",
+      "ListPrice": 2499,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 2499,
+        "StandardCost": 1219.68,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S02",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P005",
+      "SKU": "EL-MSE-03",
+      "ProductName": "Orbit Mouse",
+      "Category": "Electronics",
+      "Subcategory": "Mouse",
+      "ListPrice": 1299,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 1299,
+        "StandardCost": 807.71,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S03",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P006",
+      "SKU": "HA-MIX-01",
+      "ProductName": "BlendPro Mixer",
+      "Category": "Home Appliances",
+      "Subcategory": "Mixer",
+      "ListPrice": 5499,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 5499,
+        "StandardCost": 3957.5,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S03",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P007",
+      "SKU": "HA-AIR-02",
+      "ProductName": "Breeze Air Fryer",
+      "Category": "Home Appliances",
+      "Subcategory": "Fryer",
+      "ListPrice": 8999,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 8999,
+        "StandardCost": 6337.73,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S02",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P008",
+      "SKU": "HA-VAC-03",
+      "ProductName": "CleanMax Vacuum",
+      "Category": "Home Appliances",
+      "Subcategory": "Vacuum",
+      "ListPrice": 12999,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 12999,
+        "StandardCost": 8649.41,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S02",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P009",
+      "SKU": "HA-FAN-04",
+      "ProductName": "Aero Ceiling Fan",
+      "Category": "Home Appliances",
+      "Subcategory": "Fan",
+      "ListPrice": 3299,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 3299,
+        "StandardCost": 2464.3,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S06",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": "12 months"
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P010",
+      "SKU": "FU-CHR-01",
+      "ProductName": "Ergo Office Chair",
+      "Category": "Furniture",
+      "Subcategory": "Chair",
+      "ListPrice": 11499,
+      "Brand": "Northwind",
+      "Pricing": {
+        "ListPrice": 11499,
+        "StandardCost": 5710.14,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S06",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P011",
+      "SKU": "FU-DSK-02",
+      "ProductName": "Flex Work Desk",
+      "Category": "Furniture",
+      "Subcategory": "Desk",
+      "ListPrice": 15999,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 15999,
+        "StandardCost": 7968.16,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S02",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P012",
+      "SKU": "FU-SOF-03",
+      "ProductName": "Urban 3 Seat Sofa",
+      "Category": "Furniture",
+      "Subcategory": "Sofa",
+      "ListPrice": 38999,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 38999,
+        "StandardCost": 21562.93,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S06",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P013",
+      "SKU": "FU-BKS-04",
+      "ProductName": "Stack Bookshelf",
+      "Category": "Furniture",
+      "Subcategory": "Bookshelf",
+      "ListPrice": 6999,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 6999,
+        "StandardCost": 3692.4,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S03",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 6
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P014",
+      "SKU": "OS-NBK-01",
+      "ProductName": "Executive Notebook",
+      "Category": "Office Supplies",
+      "Subcategory": "Notebook",
+      "ListPrice": 349,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 349,
+        "StandardCost": 171.8,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S04",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P015",
+      "SKU": "OS-PEN-02",
+      "ProductName": "Gel Pen Pack",
+      "Category": "Office Supplies",
+      "Subcategory": "Pack",
+      "ListPrice": 199,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 199,
+        "StandardCost": 124.41,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S04",
+        "SupplierName": "Apex Supply Co"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P016",
+      "SKU": "OS-PRN-03",
+      "ProductName": "Laser Printer",
+      "Category": "Office Supplies",
+      "Subcategory": "Printer",
+      "ListPrice": 22499,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 22499,
+        "StandardCost": 11811.93,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S05",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P017",
+      "SKU": "OS-PPR-04",
+      "ProductName": "A4 Paper Ream",
+      "Category": "Office Supplies",
+      "Subcategory": "Ream",
+      "ListPrice": 449,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 449,
+        "StandardCost": 293.83,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S08",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P018",
+      "SKU": "SP-YGM-01",
+      "ProductName": "Yoga Mat",
+      "Category": "Sports",
+      "Subcategory": "Mat",
+      "ListPrice": 999,
+      "Brand": "Contoso",
+      "Pricing": {
+        "ListPrice": 999,
+        "StandardCost": 613.4,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S01",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 12
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P019",
+      "SKU": "SP-DMB-02",
+      "ProductName": "Dumbbell Set",
+      "Category": "Sports",
+      "Subcategory": "Set",
+      "ListPrice": 3999,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 3999,
+        "StandardCost": 2698.47,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S01",
+        "SupplierName": "Delta Wholesale"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P020",
+      "SKU": "SP-BAT-03",
+      "ProductName": "Cricket Bat",
+      "Category": "Sports",
+      "Subcategory": "Bat",
+      "ListPrice": 5499,
+      "Brand": "Adventure Works",
+      "Pricing": {
+        "ListPrice": 5499,
+        "StandardCost": 3431.64,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S03",
+        "SupplierName": "Crescent Distribution"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 24
+        },
+        {
+          "Name": "Active",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "ProductID": "P021",
+      "SKU": "SP-BAG-04",
+      "ProductName": "Gym Bag",
+      "Category": "Sports",
+      "Subcategory": "Bag",
+      "ListPrice": 1799,
+      "Brand": "Fabrikam",
+      "Pricing": {
+        "ListPrice": 1799,
+        "StandardCost": 1134.72,
+        "Currency": "INR"
+      },
+      "Supplier": {
+        "SupplierID": "S04",
+        "SupplierName": "BlueSky Traders"
+      },
+      "Attributes": [
+        {
+          "Name": "WarrantyMonths",
+          "Value": 6
+        },
+        {
+          "Name": "Active",
+          "Value": "Yes"
+        }
+      ]
+    },
+    {
+      "ProductID": "P999",
+      "SKU": "UNKNOWN-999",
+      "ProductName": "Discontinued Test Item",
+      "Category": null,
+      "Subcategory": "Unknown",
+      "Brand": "Legacy",
+      "Pricing": {
+        "ListPrice": "N/A",
+        "StandardCost": 0,
+        "Currency": "INR"
+      },
+      "Supplier": null,
+      "Attributes": []
+    }
+  ],
+  "promotions": [
+    {
+      "PromotionCode": "NONE",
+      "PromotionName": "No Promotion",
+      "DiscountPct": 0,
+      "ValidFrom": "2025-01-01",
+      "ValidTo": "2027-12-31"
+    },
+    {
+      "PromotionCode": "FEST10",
+      "PromotionName": "Festival 10%",
+      "DiscountPct": 10,
+      "ValidFrom": "2026-09-20",
+      "ValidTo": "2026-10-31"
+    },
+    {
+      "PromotionCode": "NEW15",
+      "PromotionName": "New Customer 15%",
+      "DiscountPct": 15,
+      "ValidFrom": "2026-01-01",
+      "ValidTo": "2026-12-31"
+    },
+    {
+      "PromotionCode": "BULK20",
+      "PromotionName": "Bulk Order 20%",
+      "DiscountPct": 20,
+      "ValidFrom": "2026-04-01",
+      "ValidTo": "2026-11-30"
+    },
+    {
+      "PromotionCode": "OLD5",
+      "PromotionName": "Legacy 5%",
+      "DiscountPct": 5,
+      "ValidFrom": "2025-01-01",
+      "ValidTo": "2025-12-31"
+    }
+  ],
+  "exchangeRates": [
+    {
+      "currency": "INR",
+      "rateToINR": 1,
+      "effectiveDate": "2026-01-01"
+    },
+    {
+      "currency": "USD",
+      "rateToINR": 83.2,
+      "effectiveDate": "2026-01-01"
+    },
+    {
+      "currency": "EUR",
+      "rateToINR": 90.1,
+      "effectiveDate": "2026-01-01"
+    }
+  ]
+}
